@@ -1,27 +1,27 @@
 import Navbar from "./Componets/Navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Banner from "./Componets/Banner/Banner";
-//import Services from "./Pages/services";
-//import Client from "./Pages/Client-section";
-//import Contact from "./Pages/Contact";
-//import Fields from "./Componets/Fields";
+import Services from "./Pages/services";
+import Client from "./Pages/Client-section";
+import Contact from "./Pages/Contact";
+import './App.css'
+import Fields from "./Componets/Fields";
 
 import About from "./Pages/About";
 import AppDevelopment from "./Pages/Developments/AppDevelopment";
+import WebDevelopment from "./Pages/Developments/WebDevelopment";
 
 function App() {
   return (
     <div data-aos-delay="0" data-aos-easing="ease" data-aos-duration="400">
       <BrowserRouter>
+      <Navbar />
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/about" element={<About />} />
-          {/* <Route path='/about' element={ } />
-          <Route path="/Portfolio" element={ } />
-          <Route path="/services" element={ } />
-          <Route path="/careers" element={ } />
-          <Route path="/contact" element={ } /> */}
-           
+          <Route path="/appDevelopment" element={<AppDevelopment />} />
+          <Route path="/webDevelopment" element={<WebDevelopment />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -30,13 +30,11 @@ function App() {
 
 const Home = () => {
   return (
-    <div className="container">
-      <Navbar />
+    <div className="all-container">
       <Banner />
-      {/* <Services />
+      <Services />
       <Fields />
       <Client />
-      <Contact /> */}
     </div>
   );
 };

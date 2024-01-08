@@ -2,7 +2,7 @@ import React from 'react'
 import './appDevelopment.css'
 import { Container, Row, Col } from 'react-bootstrap-v5'
 
-export default function AppDevelopment() {
+export default function WebDevelopment() {
     return (
         <div className='container'>
             <div className='row'>
@@ -12,7 +12,7 @@ export default function AppDevelopment() {
                             {" "}
                             <h1 className="ld-fh-element lqd-highlight-underline lqd-highlight-grow-left text-decoration-default">
                                 {" "}
-                                App Development
+                                Web Design &amp; Development
                             </h1>
                         </div>
                     </div>
@@ -25,21 +25,18 @@ export default function AppDevelopment() {
                                 <div className="android p-5 one">
                                     <div className="left-side">
                                         <div>
-                                            <h1>Android Development</h1>
+                                            <h1>Web Application Development</h1>
                                         </div>
 
                                         <div>
                                             <p className="mt-3">
-                                                We are a fully-fledged team of developers which works together for building exports in Android platform.
-                                                Our developers are devoted to building top notch and versatile mobile applications that suit the requirements of any undertaking.
-                                                Apart from standalone applications,
-                                                we also develop management apps and solutions which will be served as part of the enterprise solutions we provide.
+                                                Our master web application designers utilize programming processes, as PHP, Python, Java, ASP.net and HTML to create a progressive web application. Our team has the hands on experience in the industry by which we can ensure the most optimized, light weight and error free solutions. And so Foxiom is popular in the industry and considered the best web development company.
                                             </p>
                                         </div>
                                     </div>
 
                                     <div className="mt-4">
-                                        <img src="/img/android-dev.jpeg" alt="" width={'500px'} height={'auto'} />
+                                        <img src="/img/448385ef910b3d95b93303d6614c219b.service-4.webp" alt="" width={'500px'} height={'auto'} />
                                     </div>
 
 
@@ -55,21 +52,18 @@ export default function AppDevelopment() {
                                 <div className="android p-5 one">
                                     <div className="left-side mt-4">
                                         <div>
-                                            <h1>IOS Development</h1>
+                                            <h1>E-commerce Development</h1>
                                         </div>
 
                                         <div>
                                             <p className="mt-3">
-                                                Some solutions are effective only on the go. For the purpose,
-                                                we have our team equipped with iOS development skill sets. We are the experts to develop the apps
-                                                with different technologies which we shall be recommending to our clients based on the requirement, feasibility,
-                                                and optimization of the technology with respective to the solution required.
+                                                E-commerce development plays a crucial role in enabling businesses to reach a global audience, increase sales, and adapt to the changing landscape of online commerce. Successful e-commerce websites prioritize user experience, security, and seamless transaction processes to build trust and loyalty among customers.
                                             </p>
                                         </div>
                                     </div>
 
                                     <div className="mt-4">
-                                        <img src="/img/Getting-started-with-iOS-development.jpg" alt="" width={'500px'} height={'auto'} />
+                                        <img src="/img/showing-cart-trolley-shopping-online-sign-graphic.jpg" alt="" width={'500px'} height={'auto'} />
                                     </div>
                                 </div>
                             </Col>
@@ -105,7 +99,7 @@ export default function AppDevelopment() {
                                     <li><img class="loadimg" src="/img/development/icons8-python-48.png" data-src="https://srvinfotech.com/public/img/partners/duns.png" alt="DUNS" data-loaded="true" /></li>
                                     <li><img class="loadimg" src="/img/development/icons8-c++-48.png" data-src="https://srvinfotech.com/public/img/partners/clutch.png" alt="Clutch" data-loaded="true" /></li>
                                     <li><img class="loadimg" src="/img/development/icons8-swift-48.png" data-src="https://srvinfotech.com/public/img/partners/nasscom.svg" alt="NASSCOM" data-loaded="true" /></li>
-
+                                    
 
                                     <li><img class="loadimg" src="/img/development/icons8-html-48.png" data-src="https://srvinfotech.com/public/img/partners/duns.png" alt="DUNS" data-loaded="true" /></li>
                                     <li><img class="loadimg" src="/img/development/icons8-javascript-48.png" data-src="https://srvinfotech.com/public/img/partners/clutch.png" alt="Clutch" data-loaded="true" /></li>
@@ -122,7 +116,3 @@ export default function AppDevelopment() {
         </div >
     )
 }
-
-
-
-

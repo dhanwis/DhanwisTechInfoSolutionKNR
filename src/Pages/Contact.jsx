@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Contact.css'
 
 export default function Contact() {
+
 
     return (
         <div>
@@ -23,7 +24,7 @@ export default function Contact() {
                 <div className='row'>
                     <div className='col-lg-6'>
                         <div className="mt-5 ld_fancy_heading_657e0f4f82117 ">
-                            <h3 className="ld-fh-element " style={{ fontSize: '45px' }}>
+                            <h3 className="ld-fh-element" >
                                 Searching for perfect business partner in SaaS?
                             </h3>
                         </div>
@@ -139,10 +140,14 @@ export default function Contact() {
 
                 </div>
             </div>
+            {/* {window.innerWidth <= 500 ? <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.398466150162!2d75.36439217426252!3d11.877317788346453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6ce1316235134b%3A0x52648ce532c58725!2sDhanwis%20Techinfo%20Solutions%20%7C%20Best%20Website%20Development%20%7C%20App%20Development%20%7C%20Digital%20Marketing%20%7C%20Company%20In%20Kannur%20%7C%20Kerala!5e0!3m2!1sen!2sin!4v1704704173460!5m2!1sen!2sin"
+                width="400" height="300" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" /> : ''} */}
+
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.82306143901!2d75.36421720688162!3d11.877670092596782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6ce1316235134b%3A0x52648ce532c58725!2sDhanwis%20Techinfo%20Solutions%20%7C%20Best%20Website%20Development%20%7C%20App%20Development%20%7C%20Digital%20Marketing%20%7C%20Company%20In%20Kannur%20%7C%20Kerala!5e0!3m2!1sen!2sin!4v1704444011945!5m2!1sen!2sin"
-                width={'100%'}
-                height={600}
+                width={`${window.innerWidth <= 500 ? 400 : '100%'}`}
+                height={`${window.innerWidth <= 500 ? 300 : '600'}`}
                 style={{ border: 0, marginTop: "4em" }}
                 allowFullScreen=""
                 loading="lazy"

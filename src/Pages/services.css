@@ -1,8 +1,4 @@
-.mainhead.center {
-  text-align: center;
-}
-
-.bighead {
+/* .bighead {
   font-size: 3rem;
 }
 
@@ -11,14 +7,17 @@
   font-family: "Poppins", sans-serif;
 }
 
-.about .overview p.big {
-  font-size: 1.2rem;
-  color: white;
-  margin: auto;
-  margin-top: 0.5em;
-  margin-bottom: 2rem;
-  text-align: center;
-  max-width: 970px;
+@media screen and (max-width: 700px) {
+  .about .overview p.big {
+    font-size: 1.2rem;
+    color: white;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 970px;
+  }
+
 }
 
 .hddesc.center,
@@ -61,6 +60,67 @@
   display: flex;
   justify-content: center;
   flex-flow: wrap;
+}
+
+.btn {
+  padding: 7px 15px;
+  font-weight: 600;
+  margin-right: 10px;
+} */
+
+#services .h4 {
+  color: white;
+}
+
+#services .services-icon i {
+  margin-top: 1em;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  color: #ffcc33;
+}
+
+#services .why-dhanwis {
+  margin-bottom: 5em;
+}
+
+/* for large size screen */
+@media (min-width: 767px) {
+  #services .center {
+    text-align: center;
+  }
+  #services .btngroup {
+    margin-top: 1.2em;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+
+  #services .description {
+    font-size: 1.2rem;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 970px;
+  }
+}
+
+
+/* for small size screen */
+
+@media (max-width: 767px) {
+  #services .center {
+    font-size: 30px;
+  }
+
+  #services .btn {
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+
+  #services .colbox {
+    margin-bottom: 2.6em;
+  }
 }
 
 .btn {

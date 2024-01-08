@@ -71,10 +71,11 @@ img {
   background-color: rgba(0, 8, 29, 1);
   background: linear-gradient(
     90deg,
-    rgba(0, 8, 29, 1),
+    rgb(0 0 0),
     rgb(5, 23, 18) 40%,
-    rgba(38, 2, 78, 1) 100%
+    rgb(52 2 6) 100%
   );
+
   overflow: hidden;
 }
 
@@ -87,28 +88,22 @@ img {
   align-items: center;
 }
 
-.two {
-  display: flex;
-  align-items: center;
-}
-
-.three {
-  display: flex;
-  align-items: center;
-}
-
 @media screen and (max-width: 600px) {
   .one {
     display: inline;
   }
+}
 
-  .two {
-    display: inline;
-  }
+.partnerslist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+}
 
-  .three {
-    display: inline;
-  }
+li {
+  list-style: none;
 }
 
 /* .swiper-slide img {

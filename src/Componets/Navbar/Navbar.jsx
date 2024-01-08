@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   const [show, setShow] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
+  const [showMobile, setShowMobile] = useState(false)
 
   return (
     <>
@@ -56,25 +57,25 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+
         <div className="xb-header__wrap xb-header-has-arrow xb-header ">
           <div className="container">
             <div className="ul_li_between">
-              <div className="xb-header__logo">
-                {/* <a href="index.html"><img src="public/img/logo/dhanwis.jpg" alt="" /></a> */}
+              <div>
                 <a class="navbar-brand" href="#">
                   <div className="d-flex">
-                    {/* <img src="public/img/logo/dhanwis-logo/Icon_2-removebg-preview.png" alt="Logo" width="65" height="auto" className="d-inline-block align-text-top rounded-circle" /> */}
                     <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2>
                   </div>
                 </a>
               </div>
+
+
+
               <div className="main-menu__wrap ul_li navbar navbar-expand-lg">
                 <nav className="main-menu collapse navbar-collapse">
                   <ul>
                     <li className="menu-item-has-children active">
-                      <a href="#home">
-                        <span>Home</span>
-                      </a>
+                      <NavLink to={'/'}> <span>Home</span></NavLink>
                     </li>
                     <li className="menu-item-has-children">
                       <NavLink to={"/about"}>
@@ -109,23 +110,24 @@ export default function Navbar() {
                         </li>
                         <li>
                           {" "}
-                          <NavLink to={"web design/developement"}>
+                          <NavLink to={"/webDevelopment"}>
                             <span>Web Design &amp; Development</span>
                           </NavLink>{" "}
                         </li>
                         {/* <li><a href="checkout.html"><span>ERP Development</span></a></li> */}
                       </ul>
                     </li>
-                    <li className="menu-item-has-children">
-                      <a href="#careers">
+                    <li>
+                      <a href="#contact">
                         <span>Careers</span>
                       </a>
                     </li>
-                    <li>
-                      <a href="#contact">
-                        <span>Contact</span>
-                      </a>
+
+
+                    <li className="menu-item-has-children">
+                      <NavLink to={'/contact'}><span>Contact</span></NavLink>
                     </li>
+
                   </ul>
                 </nav>
               </div>
@@ -156,7 +158,7 @@ export default function Navbar() {
                   </a>
                 </div>
                 <div className="header-bar d-lg-none">
-                  <a className="xb-header-bar xb-nav-mobile ml-30">
+                  <a className="xb-header-bar xb-nav-mobile ml-30" onClick={() => setShowMobile(!show)}>
                     <div className="xb-header-bar__icon">
                       <span></span>
                       <span></span>
@@ -174,9 +176,8 @@ export default function Navbar() {
       {/* header end */}
       {/* header search start */}
       <div
-        className={`header-search-form-wrapper style-black ${
-          showSearch ? "open" : ""
-        }`}
+        className={`header-search-form-wrapper style-black ${showSearch ? "open" : ""
+          }`}
       >
         <div
           className="xb-search-close xb-close"

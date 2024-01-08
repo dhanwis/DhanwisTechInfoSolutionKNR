@@ -43,6 +43,7 @@ body {
   line-height: 26px;
   color: var(--color-default);
   background-color: var(--color-white);
+   
 }
 
 /* adding gap to bottom */
@@ -5618,6 +5619,12 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 @media (max-width: 991px) {
   .hero-marketing {
     padding-top: 170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-marketing {
+    padding: 15px;
   }
 }
 

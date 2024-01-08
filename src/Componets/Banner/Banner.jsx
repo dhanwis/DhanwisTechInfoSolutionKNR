@@ -130,7 +130,7 @@ export default function Banner() {
 
       <div class="xb-backtotop style-marketing active">
         <a href="#" class="scroll">
-        <i class="fa-solid fa-arrow-up"></i> 
+          <i class="fa-solid fa-arrow-up"></i>
         </a>
       </div>
       <div className="gap-down"></div>
