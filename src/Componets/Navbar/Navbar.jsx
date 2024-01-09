@@ -64,7 +64,7 @@ export default function Navbar() {
               <div>
                 <a class="navbar-brand" href="#">
                   <div className="d-flex">
-                    <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2>
+                    <NavLink to={'/'}> <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2></NavLink>
                   </div>
                 </a>
               </div>

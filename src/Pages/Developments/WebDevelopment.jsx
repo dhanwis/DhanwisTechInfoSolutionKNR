@@ -89,7 +89,7 @@ export default function WebDevelopment() {
 
                             {/* strip animated */}
 
-                            <div class="col-12">
+                            <div class="col-12 mt-2 mb-5">
                                 <ul class="partnerslist mt-5">
                                     <li><img class="loadimg" src="/img/development/icons8-react-100.png" data-src="https://srvinfotech.com/public/img/partners/g-cloud.png" alt="Google Cloud" data-loaded="true" /></li>
                                     <li><img class="loadimg" src="/img/development/icons8-kotlin-48.png" data-src="https://srvinfotech.com/public/img/partners/duns.png" alt="DUNS" data-loaded="true" /></li>
@@ -99,7 +99,7 @@ export default function WebDevelopment() {
                                     <li><img class="loadimg" src="/img/development/icons8-python-48.png" data-src="https://srvinfotech.com/public/img/partners/duns.png" alt="DUNS" data-loaded="true" /></li>
                                     <li><img class="loadimg" src="/img/development/icons8-c++-48.png" data-src="https://srvinfotech.com/public/img/partners/clutch.png" alt="Clutch" data-loaded="true" /></li>
                                     <li><img class="loadimg" src="/img/development/icons8-swift-48.png" data-src="https://srvinfotech.com/public/img/partners/nasscom.svg" alt="NASSCOM" data-loaded="true" /></li>
-                                    
+
 
                                     <li><img class="loadimg" src="/img/development/icons8-html-48.png" data-src="https://srvinfotech.com/public/img/partners/duns.png" alt="DUNS" data-loaded="true" /></li>
                                     <li><img class="loadimg" src="/img/development/icons8-javascript-48.png" data-src="https://srvinfotech.com/public/img/partners/clutch.png" alt="Clutch" data-loaded="true" /></li>
@@ -107,7 +107,6 @@ export default function WebDevelopment() {
 
                                     <li><img class="loadimg" src="/img/development/icons8-angular-48.png" data-src="https://srvinfotech.com/public/img/partners/g-cloud.png" alt="Google Cloud" data-loaded="true" /></li>
                                 </ul>
-
                             </div>
                         </Row>
                     </Container>

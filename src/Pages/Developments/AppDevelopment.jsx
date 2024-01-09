@@ -96,7 +96,7 @@ export default function AppDevelopment() {
                             {/* strip animated */}
 
                             <div class="col-12">
-                                <ul class="partnerslist mt-5">
+                                <ul class="partnerslist mt-2 mb-5">
                                     <li><img class="loadimg" src="/img/development/icons8-react-100.png" data-src="https://srvinfotech.com/public/img/partners/g-cloud.png" alt="Google Cloud" data-loaded="true" /></li>
                                     <li><img class="loadimg" src="/img/development/icons8-kotlin-48.png" data-src="https://srvinfotech.com/public/img/partners/duns.png" alt="DUNS" data-loaded="true" /></li>
                                     <li><img class="loadimg" src="/img/development/icons8-flutter-48.png" data-src="https://srvinfotech.com/public/img/partners/clutch.png" alt="Clutch" data-loaded="true" /></li>

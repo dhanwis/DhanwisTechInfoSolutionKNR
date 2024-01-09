@@ -4,72 +4,46 @@ import './About.css'
 export default function About() {
     return (
         <>
-            <section className="relative z-10 overflow-hidden  lg:pt-[150px]">
-                <div className="container">
-                    <div className='row'>
-                        <div className='col-lg-8'>
+            <section>
+                <div className='container'>
+                    <div className='row '>
+                        <div className='col-12'>
                             <div className="w-full px-4 md:w-8/12 lg:w-7/12">
                                 <div className="heading-plus-sub mb-5">
-                                    <h1 className="mb-3">
-                                        About Page
+                                    <small className='text-muted'>Technology is best when it brings people together. ...</small>
+                                    <h1 className="mb-3 mt-5">
+                                        Dhanwis
+                                        <br />
+                                        TechInfo Solution
                                     </h1>
-                                    <p className="text-base font-medium leading-relaxed text-body-color">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius
-                                        eros eget sapien consectetur ultrices. Ut quis dapibus libero.
-                                    </p>
                                 </div>
-                            </div>
-                            <div class="effect">
-                                {/* <img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png" />
-                            <img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png" />
-                            <img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png" />
-                            <img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png" /> */}
-                                <img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png" />
-                                <img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png" />
-                                <img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png" />
-                                <img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png" />
-
-                            </div>
-                            <div class="image">
-                                <img src="http://pixelcurse.com/wp-content/uploads/2011/02/minimalist_landscape_8.jpg" class="img" alt="" />
                             </div>
                         </div>
 
-                        {/* <div className='col-lg-6'>
-                            <div className='w-full px-4 md:w-8/12 lg:w-7/12'>
-                                <h2 style={{ marginTop: '44px', marginBottom: "20px" }}>
-                                    Crafted for Startup, SaaS and Business Sites.
-                                </h2>
-                                <p className="text-base !leading-relaxed text-body-color md:text-lg">
-                                    The main ‘thrust’ is to focus on educating attendees on how to
-                                    best protect highly vulnerable business applications with
-                                    interactive panel discussions and roundtables.
-                                </p>
+                        <div className={`cmpad`}>
+                            <div className="row">
+                                <div className={`col-lg-6`}>
+                                    <h2 className="mainhead">
+                                        About US
+                                        <br /> <span style={{ color: '#ffcc33', fontSize: 'medium' }}>Power of Technology</span>
+                                    </h2>
+                                    <p className="description mt-3">
+                                        We use the right mix of digital marketing services. we are here to
+                                        provide the best content to break your marketing efforts. get the best
+                                        content marketing strategies. we create the most amazing customer
+                                        experiences. Successful campaigns that deliver on business objectives.
+                                    </p>
+                                </div>
+
+                                <div className="col-lg-6" data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="500">
+                                    <img src="/img/web.jpeg" alt="" className='mt-3'/>
+                                </div>
                             </div>
-                        </div> */}
-
-
-                        {/* <div className='col-lg-6'>
-                            <div
-                                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
-                                data-wow-delay=".2s"
-                            >
-                                <img
-                                    alt="about-image"
-                                    src="/img/hero/standard-quality-control-concept-m.jpg"
-                                    decoding="async"
-                                    width={'500'}
-                                    height={'auto'}
-                                />
-                            </div>
-
-                        </div> */}
-
-
+                        </div>
                     </div>
                 </div>
-
-                {/* <div className='clients'></div> */}
             </section >
         </>
     )

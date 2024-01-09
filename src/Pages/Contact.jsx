@@ -6,7 +6,7 @@ export default function Contact() {
 
     return (
         <div>
-            <div class="container" id='contact'>
+            <div class="p-5 container" id='contact'>
                 <div class="row ld-row ld-row-outer ">
                     <div class="wpb_column vc_column_container vc_col-sm-12 liquid-column-657e0f4f7e242">
                         <div class="vc_column-inner  ">
@@ -21,7 +21,7 @@ export default function Contact() {
                 </div>
 
 
-                <div className='row'>
+                <div className='row p-5'>
                     <div className='col-lg-6'>
                         <div className="mt-5 ld_fancy_heading_657e0f4f82117 ">
                             <h3 className="ld-fh-element" >

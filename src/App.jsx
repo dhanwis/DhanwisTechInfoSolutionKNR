@@ -10,6 +10,7 @@ import Fields from "./Componets/Fields";
 import About from "./Pages/About";
 import AppDevelopment from "./Pages/Developments/AppDevelopment";
 import WebDevelopment from "./Pages/Developments/WebDevelopment";
+import Footer from "./Componets/Footer/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/webDevelopment" element={<WebDevelopment />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
