@@ -35,19 +35,22 @@ export default function About() {
                                     </p>
                                 </div>
 
-                                <div className="col-lg-6" data-aos="fade-down"
-                                    data-aos-easing="linear"
-                                    data-aos-duration="500">
-                                    <img src="/img/web.jpeg" alt="" className='mt-3'/>
+                                <div className="col-lg-6 "  >
+                                    <img src="img/web.jpeg" width={'500'} alt="img" className='mt-3 ' data-aos="fade-up"
+                                        data-aos-duration="500"
+                                        data-aos-delay="300" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section >
+
+
         </>
     )
 }
 
 
+// data-animation="fadeInUp"  animated fadeInUp visible
 

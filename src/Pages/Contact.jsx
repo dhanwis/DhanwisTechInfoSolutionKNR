@@ -86,10 +86,10 @@ export default function Contact() {
                                                 <h6 className="ld-fh-element lqd-highlight-underline lqd-highlight-grow-left text-decoration-default">
                                                     {" "}
                                                     <a
-                                                        style={{ color: "red" }}
+                                                         
                                                         href="mailto:hr@foxiom.com"
                                                     >
-                                                        hr@foxiom.com
+                                                        info@dhanwis.com
                                                     </a>
                                                 </h6>
                                             </div>
@@ -117,12 +117,12 @@ export default function Contact() {
                                                     {" "}
                                                     <span style={{ color: "#000080" }}>
                                                         <a
-                                                            style={{ color: "red" }}
+                                                            
                                                             href="tel:+919895111400"
                                                         >
                                                             +91 9895111400 |{" "}
                                                         </a>
-                                                        <a style={{ color: "red" }} href="tel:+96566011953">
+                                                        <a   href="tel:+96566011953">
                                                             +965 66011953
                                                         </a>
                                                     </span>
@@ -140,9 +140,6 @@ export default function Contact() {
 
                 </div>
             </div>
-            {/* {window.innerWidth <= 500 ? <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.398466150162!2d75.36439217426252!3d11.877317788346453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6ce1316235134b%3A0x52648ce532c58725!2sDhanwis%20Techinfo%20Solutions%20%7C%20Best%20Website%20Development%20%7C%20App%20Development%20%7C%20Digital%20Marketing%20%7C%20Company%20In%20Kannur%20%7C%20Kerala!5e0!3m2!1sen!2sin!4v1704704173460!5m2!1sen!2sin"
-                width="400" height="300" style="border:0;"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" /> : ''} */}
 
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.82306143901!2d75.36421720688162!3d11.877670092596782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6ce1316235134b%3A0x52648ce532c58725!2sDhanwis%20Techinfo%20Solutions%20%7C%20Best%20Website%20Development%20%7C%20App%20Development%20%7C%20Digital%20Marketing%20%7C%20Company%20In%20Kannur%20%7C%20Kerala!5e0!3m2!1sen!2sin!4v1704444011945!5m2!1sen!2sin"

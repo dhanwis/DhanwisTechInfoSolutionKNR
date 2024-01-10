@@ -26,12 +26,7 @@
   margin-bottom: 2rem;
 }
 
-@media (min-width: 767px) {
-  .cmpad {
-    padding: 2em;
-  }
-}
-
+ 
 @media (max-width: 767px) {
   .cmpad {
     padding-top: 1.5em;
@@ -48,3 +43,4 @@
 .typelist a {
   color: rgb(207, 207, 207);
 }
+ 

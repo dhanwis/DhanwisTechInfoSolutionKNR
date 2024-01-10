@@ -18,21 +18,6 @@ export default function Client() {
                         </p>
                     </div>
 
-                    {/* <div class="col-12">
-                        <ul class="partnerslist mt-5 d-flex">
-                            <li><img class="loadimg" style={{ width: '200px', marginLeft: '10px' }} src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_10_23.png" data-src="https://srvinfotech.com/public/img/partners/g-cloud.png" alt="Google Cloud" data-loaded="true" /></li>
-                            <li><img class="loadimg" style={{ width: '200px', marginLeft: '10px' }} src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_10_38.png" data-src="https://srvinfotech.com/public/img/partners/duns.png" alt="DUNS" data-loaded="true" /></li>
-                            <li><img class="loadimg" style={{ width: '200px', marginLeft: '10px' }} src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_10_52.png" data-src="https://srvinfotech.com/public/img/partners/clutch.png" alt="Clutch" data-loaded="true" /></li>
-                            <li><img class="loadimg" style={{ width: '200px', marginLeft: '10px' }} src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_11_18.png" data-src="https://srvinfotech.com/public/img/partners/duns.png" alt="DUNS" data-loaded="true" /></li>
-
-                            <li><img class="loadimg" style={{ width: '200px', marginLeft: '10px' }} src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_11_12.png" data-src="https://srvinfotech.com/public/img/partners/nasscom.svg" alt="NASSCOM" data-loaded="true" /></li>
-                            <li><img class="loadimg" style={{ width: '200px', marginLeft: '10px' }} src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_11_18.png" data-src="https://srvinfotech.com/public/img/partners/duns.png" alt="DUNS" data-loaded="true" /></li>
-                            <li><img class="loadimg" style={{ width: '200px', marginLeft: '10px' }}  data-src="https://srvinfotech.com/public/img/partners/clutch.png" alt="Clutch" data-loaded="true" /></li>
-                            <li><img class="loadimg" style={{ width: '200px', marginLeft: '10px' }} src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_11_26.png" data-src="https://srvinfotech.com/public/img/partners/nasscom.svg" alt="NASSCOM" data-loaded="true" /></li>
-                        </ul>
-
-                    </div> */}
-
                     <div class="clients-container">
                         <div class="client-item">
                             <img src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_11_26.png" alt="Client 1" />
@@ -52,10 +37,10 @@ export default function Client() {
                             <img src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_11_12.png" alt="Client 1" />
                         </div>
                         <div class="client-item">
-                            <img  src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_10_52.png" alt="Client 2" />
+                            <img src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_10_52.png" alt="Client 2" />
                         </div>
                         <div class="client-item">
-                            <img  src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_10_38.png" alt="Client 3" />
+                            <img src="/img/clients/Cinema News Agency _ Exclusive Cinema Magazine in Malayalam and 18 more pages - Profile 1 - Microsoft​ Edge 10-01-2024 14_21_52.png" alt="Client 3" />
                         </div>
                     </div>
                 </div>
@@ -63,16 +48,3 @@ export default function Client() {
         </div>
     )
 }
-
-
-{/* second line */ }
-
-//  <div class="client-item">
-//  <img src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_11_12.png" alt="Client 1" />
-// </div>
-// <div class="client-item">
-//  <img src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_10_38.png" data-src="https://srvinfotech.com/public/img/partners/duns.png" alt="Client 2" />
-// </div>
-// <div class="client-item">
-//  <img src="/img/clients/Ashraya Medicals - Google Chrome 09-01-2024 14_11_26.png" alt="Client 3" />
-// </div>

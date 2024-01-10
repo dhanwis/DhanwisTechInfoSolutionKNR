@@ -3,8 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
-  const [showSearch, setShowSearch] = useState(false);
-  const [showMobile, setShowMobile] = useState(false)
+  //const [showSearch, setShowSearch] = useState(false);
 
   return (
     <>
@@ -40,9 +39,7 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="#!">
-                    <i className="fab fa-pinterest-p" />
-                  </a>
+                  <a href="https://api.whatsapp.com/send?phone=8086487219"><i class="fa-brands fa-whatsapp"></i></a>
                 </li>
               </ul>
             </div>
@@ -64,7 +61,10 @@ export default function Navbar() {
               <div>
                 <a class="navbar-brand" href="#">
                   <div className="d-flex">
-                    <NavLink to={'/'}> <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2></NavLink>
+                    {/* <NavLink to={'/'}> <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2></NavLink> */}
+                    <a href="/">
+                      <img class="logo-white" src="img/logo/Dhanwis Logo-01.png" alt="logo" style={{ maxWidth: '150px' }} />
+                    </a>
                   </div>
                 </a>
               </div>
@@ -78,12 +78,10 @@ export default function Navbar() {
                       <NavLink to={'/'}> <span>Home</span></NavLink>
                     </li>
                     <li className="menu-item-has-children">
-                      <NavLink to={"/about"}>
-                        <span>About us</span>
-                      </NavLink>
+                      <a href="/about"><span>About us</span></a>
                     </li>
                     <li className="menu-item-has-children">
-                      <a href="#portfolio">
+                      <a href="/portfolio-section">
                         <span>Portfolio</span>
                       </a>
                     </li>
@@ -93,11 +91,9 @@ export default function Navbar() {
                       </a>
                       <ul className="submenu">
                         <li>
-                          <NavLink to={"/appDevelopment"}>
-                            <span>Mobile App Development</span>
-                          </NavLink>
+                          <a href="/appDevelopment"><span>Mobile App Development</span></a>
                         </li>
-                        <li>
+                        {/* <li>
                           {" "}
                           <NavLink to={"/softwaredevelopment"}>
                             <span>Software Development</span>
@@ -107,25 +103,23 @@ export default function Navbar() {
                           <NavLink to={"/digital-marketing"}>
                             <span>Digital Marketing</span>
                           </NavLink>{" "}
-                        </li>
+                        </li> */}
                         <li>
                           {" "}
-                          <NavLink to={"/webDevelopment"}>
-                            <span>Web Design &amp; Development</span>
-                          </NavLink>{" "}
+
+                          <a href="/webDevelopment"> <span>Web  Development</span></a>
                         </li>
                         {/* <li><a href="checkout.html"><span>ERP Development</span></a></li> */}
                       </ul>
                     </li>
                     <li>
-                      <a href="#contact">
+                      <a href="/careers">
                         <span>Careers</span>
                       </a>
                     </li>
 
-
                     <li className="menu-item-has-children">
-                      <NavLink to={'/contact'}><span>Contact</span></NavLink>
+                      <a href="/contact"><span>Contact</span></a>
                     </li>
 
                   </ul>
@@ -134,7 +128,7 @@ export default function Navbar() {
               {/* search btn */}
 
               <div className="xb-header__right ul_li">
-                <ul className="xb-header__action ul_li">
+                {/* <ul className="xb-header__action ul_li">
                   <li>
                     <a
                       className="header-search-btn"
@@ -143,22 +137,12 @@ export default function Navbar() {
                       <img src="public/img/icon/ins_search.svg" alt="" />
                     </a>
                   </li>
-                </ul>
+                </ul> */}
                 <div className="d-none d-lg-block">
                   <a
                     className="xb-header-bar offcanvas-sidebar-btn ml-30"
                     onClick={() => setShow(!show)}
                   >
-                    <div className="xb-header-bar__icon">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </a>
-                </div>
-                <div className="header-bar d-lg-none">
-                  <a className="xb-header-bar xb-nav-mobile ml-30" onClick={() => setShowMobile(!show)}>
                     <div className="xb-header-bar__icon">
                       <span></span>
                       <span></span>
@@ -175,7 +159,7 @@ export default function Navbar() {
 
       {/* header end */}
       {/* header search start */}
-      <div
+      {/* <div
         className={`header-search-form-wrapper style-black ${showSearch ? "open" : ""
           }`}
       >
@@ -193,7 +177,7 @@ export default function Navbar() {
             />
           </form>
         </div>
-      </div>
+      </div> */}
       {/* header search end */}
       {/* sidebar-info start */}
       <div className={`offcanvas-sidebar ${show ? "active" : ""}`}>
@@ -245,7 +229,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="sidebar-newsletter">
+        {/* <div className="sidebar-newsletter">
           <h4 className="sidebar-heading">Get Regular Updated</h4>
           <form
             action="#"
@@ -259,12 +243,12 @@ export default function Navbar() {
               <img src="/img/icon/mr_arrow_up.svg" alt="arrow" />
             </button>
           </form>
-        </div>
-        <div className="sidebar-social mr-footer-info mt-65">
+        </div> */}
+        <div className="sidebar-social mr-footer-info ">
           <h4 className="sidebar-heading">follwo us</h4>
           <ul className="xb-item--social ul_li">
             <li>
-              <a href="#!">
+              <a href="https://www.facebook.com/dhanwisinfo">
                 <i className="fab fa-facebook-f" />
               </a>
             </li>
@@ -274,24 +258,8 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#!">
+              <a href="https://www.instagram.com/dhanwistechinfosolutions/">
                 <i className="fab fa-instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="#!">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={18}
-                  height={18}
-                  viewBox="0 0 18 18"
-                  fill="none"
-                >
-                  <path
-                    d="M10.7124 7.62177L17.4133 0H15.8254L10.0071 6.61788L5.35992 0H0L7.02738 10.0074L0 18H1.58799L7.73237 11.0113L12.6401 18H18L10.7121 7.62177H10.7124ZM8.53747 10.0956L7.82546 9.09906L2.16017 1.16971H4.59922L9.17118 7.56895L9.8832 8.56546L15.8262 16.8835H13.3871L8.53747 10.096V10.0956Z"
-                    fill="white"
-                  />
-                </svg>
               </a>
             </li>
           </ul>

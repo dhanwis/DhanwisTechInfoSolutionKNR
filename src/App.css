@@ -9,3 +9,25 @@
     padding: 1rem;
   }
 }
+
+
+.loading-screen {
+   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Set your background color */
+  z-index: 1000; /* Adjust as needed */
+}
+
+.loading {
+  /* Optional: Add styles to hide main content during loading */
+  opacity: 0.6;
+}
+

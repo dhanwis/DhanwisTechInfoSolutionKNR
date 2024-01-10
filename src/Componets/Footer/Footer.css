@@ -1,6 +1,7 @@
-.icon:hover {
+.footer-icon .icon:hover {
     background-color: white;
 } 
+
 .fdiv{
     width: 100%;
     height: 3px;
