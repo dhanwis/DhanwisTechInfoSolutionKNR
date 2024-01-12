@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   //const [showSearch, setShowSearch] = useState(false);
 
   return (
@@ -55,89 +56,77 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="xb-header__wrap xb-header-has-arrow xb-header ">
+        <div className={`xb-header__wrap xb-header-has-arrow xb-header ${showNav ? 'show-nav' : ''}`}>
           <div className="container">
             <div className="ul_li_between">
-              <div>
-                <a class="navbar-brand" href="#">
-                  <div className="d-flex">
-                    {/* <NavLink to={'/'}> <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2></NavLink> */}
-                    <a href="/">
-                      <img class="logo-white" src="img/logo/Dhanwis Logo-01.png" alt="logo" style={{ maxWidth: '150px' }} />
-                    </a>
-                  </div>
-                </a>
-              </div>
-
-
-
               <div className="main-menu__wrap ul_li navbar navbar-expand-lg">
-                <nav className="main-menu collapse navbar-collapse">
-                  <ul>
-                    <li className="menu-item-has-children active">
-                      <NavLink to={'/'}> <span>Home</span></NavLink>
+                <div className="xb-header__logo">
+                  <a href="/" className="navbar-brand">
+                    <img src="/img/logo/dhanwis-logo/Icon 1.png" alt="" width={'60'} />
+                    <span style={{ color: "#ffcc33", fontSize: '23px', fontWeight: 'bold' }}>Dhanwis</span>
+                  </a>
+                </div>
+                <button 
+                  className=" navbar-toggler"
+                  type="button"
+                  onClick={() => setShowNav(!showNav)}
+                >
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                <nav className={`main-menu collapse navbar-collapse ${showNav ? 'show' : ''}`} id="navbarNav">
+                  <ul className="mx-5 navbar-nav">
+                    <li className="nav-item">
+                      <NavLink to={'/'} className="nav-link" activeClassName="active-link">
+                        <span>Home</span>
+                      </NavLink>
                     </li>
-                    <li className="menu-item-has-children">
-                      <a href="/about"><span>About us</span></a>
+                    <li className="nav-item">
+                      <NavLink to="/about" className="nav-link" activeClassName="active-link">
+                        <span>About us</span>
+                      </NavLink>
                     </li>
-                    <li className="menu-item-has-children">
-                      <a href="/portfolio-section">
+                    <li className="nav-item">
+                      <NavLink to="/portfolio-section" className="nav-link" activeClassName="active-link">
                         <span>Portfolio</span>
-                      </a>
+                      </NavLink>
                     </li>
-                    <li className="menu-item-has-children">
-                      <a href="#services">
-                        <span>Services</span>
-                      </a>
+                    <li className="nav-item">
+                      <a href="#services" className="nav-link" activeClassName="active-link"><span>Services</span></a>
                       <ul className="submenu">
-                        <li>
-                          <a href="/appDevelopment"><span>Mobile App Development</span></a>
+                        <li className="nav-item">
+                          <NavLink to="/appDevelopment" className="nav-link" activeClassName="active-link">
+                            <span>Mobile App Development</span>
+                          </NavLink>
                         </li>
-                        {/* <li>
-                          {" "}
-                          <NavLink to={"/softwaredevelopment"}>
-                            <span>Software Development</span>
-                          </NavLink>{" "}
+                        {/* ... add other services ... */}
+                        <li className="nav-item">
+                          <NavLink to="/webDevelopment" className="nav-link" activeClassName="active-link">
+                            <span>Web Development</span>
+                          </NavLink>
                         </li>
-                        <li>
-                          <NavLink to={"/digital-marketing"}>
-                            <span>Digital Marketing</span>
-                          </NavLink>{" "}
-                        </li> */}
-                        <li>
-                          {" "}
-
-                          <a href="/webDevelopment"> <span>Web  Development</span></a>
-                        </li>
-                        {/* <li><a href="checkout.html"><span>ERP Development</span></a></li> */}
                       </ul>
                     </li>
-                    <li>
-                      <a href="/careers">
+                    <li className="nav-item">
+                      <NavLink to="/careers" className="nav-link" activeClassName="active-link">
                         <span>Careers</span>
-                      </a>
+                      </NavLink>
                     </li>
-
-                    <li className="menu-item-has-children">
-                      <a href="/contact"><span>Contact</span></a>
+                    <li className="nav-item">
+                      <NavLink to="/contact" className="nav-link" activeClassName="active-link">
+                        <span>Contact</span>
+                      </NavLink>
                     </li>
-
                   </ul>
                 </nav>
               </div>
-              {/* search btn */}
-
+              
+              {showNav && (
+                <div
+                  className="mobile-menu-overlay"
+                  onClick={() => setShowNav(false)}
+                ></div>
+              )}
               <div className="xb-header__right ul_li">
-                {/* <ul className="xb-header__action ul_li">
-                  <li>
-                    <a
-                      className="header-search-btn"
-                      onClick={() => setShowSearch(!showSearch)}
-                    >
-                      <img src="public/img/icon/ins_search.svg" alt="" />
-                    </a>
-                  </li>
-                </ul> */}
                 <div className="d-none d-lg-block">
                   <a
                     className="xb-header-bar offcanvas-sidebar-btn ml-30"
@@ -187,7 +176,7 @@ export default function Navbar() {
         <div className="sidebar-top mb-65">
           <div className="sidebar-logo mb-40">
             <a href="index.html">
-              <img src="assets/img/logo/logo3.svg" alt="logo" />
+              <img src="/img/logo/Dhanwis Logo-01.png" width={'150'} height={'auto'} alt="logo" />
             </a>
           </div>
           <div className="sidebar-content">

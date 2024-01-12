@@ -4,6 +4,10 @@
   }
 }
 
+.cmpad {
+  padding: 2em;
+}
+
 .items-center {
   align-items: center;
 }
@@ -27,7 +31,7 @@
   .heading-plus-sub h1 {
     font-size: 30px;
   }
-  .cmpad{
+  .cmpad {
     padding-inline-start: 1.5em;
   }
 }

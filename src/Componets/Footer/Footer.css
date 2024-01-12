@@ -1,19 +1,14 @@
-.footer-icon .icon:hover {
-    background-color: white;
-} 
 
-.fdiv{
-    width: 100%;
-    height: 3px;
-}
-
+ 
 .iconcol{
     display: flex;
     justify-content: end;
 }
+
+
  @media  (max-width: 768px) {
     .footer-content{
-        font-size: 8px;
+        font-size: 7px;
     }
     .footer-icon{
         font-size: 6px;

@@ -38,7 +38,7 @@ export default function About() {
                                 <div className="col-lg-6 "  >
                                     <img src="img/web.jpeg" width={'500'} alt="img" className='mt-3 ' data-aos="fade-up"
                                         data-aos-duration="500"
-                                        data-aos-delay="300" />
+                                        data-aos-delay="200" />
                                 </div>
                             </div>
                         </div>
