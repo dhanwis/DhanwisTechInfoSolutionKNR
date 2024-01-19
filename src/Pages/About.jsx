@@ -34,12 +34,12 @@ export default function About() {
                   </h2>
                   <p className="description mt-3">
                     For over a decade, the world has dramatically changed its
-                    course using IT technologies. HEDONE Services understand the
+                    course using IT technologies.Dhanwis learning hub understand the
                     necessity and have started giving our contribution in this
                     new generation business era to offer our clients, solutions
                     for their every Business and Social Network. Presently
                     catering to clients from India, Canada and Middle Easte
-                    HEDONE is synonymous with a heady mix of enthusiastic, young
+                    Dhanwis is synonymous with a heady mix of enthusiastic, young
                     and experienced engineering professionals and systems
                     development tech wizards, adept at brewing innovative and
                     dynamic e-solutions. Our value-added business services and
