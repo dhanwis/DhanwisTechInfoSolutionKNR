@@ -34,7 +34,7 @@ export default function About() {
                   </h2>
                   <p className="description mt-3">
                     For over a decade, the world has dramatically changed its
-                    course using IT technologies.Dhanwis learning hub understand the
+                    course using IT technologies.Dhanwis understand the
                     necessity and have started giving our contribution in this
                     new generation business era to offer our clients, solutions
                     for their every Business and Social Network. Presently

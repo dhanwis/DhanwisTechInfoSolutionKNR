@@ -16,14 +16,14 @@ export default function Banner() {
                   <span>
                     <img src="/img/icon/hr_icon.png" alt="" />
                   </span>{" "}
-                  Hey there! We’re seargin
+                  Hey there! We’re Dhanwis
                 </span>
                 <h2 class="xb-item--title">
                   Driving{" "}
                   <span class="icon">
                     <img src="/img/icon/m_star.png" alt="" />
                   </span>{" "}
-                  Growth Through Digital Marketing{" "}
+                  Growth Through Digital Solutions{" "}
                   <img id="reload" src="/img/icon/decor2.png" alt="" />
                 </h2>
                 <p
