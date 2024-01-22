@@ -8,9 +8,9 @@ export default function WebDevelopment() {
             <div className='row'>
                 <Col>
                     <div style={{ width: '100%' }}>
-                        <div className="py-3 ld-fancy-heading ld_fancy_heading_6585270055965">
+                        <div className="py-5 ld-fancy-heading ld_fancy_heading_6585270055965">
                             {" "}
-                            <h1 className="ld-fh-element lqd-highlight-underline lqd-highlight-grow-left text-decoration-default">
+                            <h1 className="d-sm-none d-lg-block ld-fh-element lqd-highlight-underline lqd-highlight-grow-left text-decoration-default">
                                 {" "}
                                 Web Design &amp; Development
                             </h1>

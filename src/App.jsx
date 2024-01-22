@@ -6,6 +6,7 @@ import Client from "./Pages/Client-section";
 import Contact from "./Pages/Contact";
 import './App.css'
 import Fields from "./Componets/Fields";
+import 'react-chatbot-kit/build/main.css';
 
 import About from "./Pages/About";
 import AppDevelopment from "./Pages/Developments/AppDevelopment";

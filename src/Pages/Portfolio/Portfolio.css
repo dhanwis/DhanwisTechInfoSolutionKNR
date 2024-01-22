@@ -42,3 +42,13 @@
 .project a:hover {
   background-color: #0056b3;
 }
+
+@media (max-width:991px) {
+  .d-sm-none{
+    display: none;
+  }
+
+.project{
+  margin-top: 6em;
+}
+}
