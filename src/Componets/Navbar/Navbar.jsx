@@ -1,27 +1,20 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 export default function Navbar() {
-  const [show, setShow] = useState(false);
-  const [showNav, setShowNav] = useState(false);
-  //const [showSearch, setShowSearch] = useState(false);
+  const [showSide, setShowSide] = useState(false);
+  const [showMobile, setShowMobile] = useState(false);
 
   return (
     <>
-      <div className="xb-backtotop style-marketing">
-        <a href="#" className="scroll">
-          <i className="far fa-arrow-up" />
-        </a>
-      </div>
-      {/* <div id="xb-loadding" className="xb-loader xb-loader-marketing"><div className="loading-spin" /></div> */}
-
       <header
         id="xb-header-area"
-        className="site-header header-marketing is-sticky "
+        className="site-header header-marketing is-sticky"
       >
         <div className="xb-header__top">
-          <div className="container m-auto ul_li_between  d-flex justify-content-between">
-            <div className="xb-social ul_li  p-3">
+          <div className="container m-auto ul_li_between">
+            <div className="xb-social ul_li">
               <span>Follow us :</span>
               <ul className="ul_li">
                 <li>
@@ -40,103 +33,208 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://api.whatsapp.com/send?phone=8086487219"><i class="fa-brands fa-whatsapp"></i></a>
+                  <a href="https://api.whatsapp.com/send?phone=8086487219">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
                 </li>
               </ul>
             </div>
-            <div className="">
-              <button className="btn btn-warning btn-sm">
-                {" "}
-                Let's Talk
-                <span className="headphone-icon ms-2">
-                  <i className="fa-solid fa-headphones"></i>
-                </span>
-              </button>
+            <div className="xb-header__language pl-70">
+              <div className="">
+                <button className="btn btn-warning btn-sm mb-2">
+                  {" "}
+                  Let's Talk
+                  <span className="headphone-icon ms-2">
+                    <i className="fa-solid fa-headphones"></i>
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-
-        <div className={`xb-header__wrap xb-header-has-arrow xb-header ${showNav ? 'show-nav' : ''}`}>
+        {/* xb-header__wrap xb-header-has-arrow xb-header */}
+        <div className="mt-3">
           <div className="container">
             <div className="ul_li_between">
+              {/* xb-header__logo */}
+              <div className="">
+                <NavLink to={"/"}>
+                  {" "}
+                  <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2>
+                </NavLink>
+              </div>
               <div className="main-menu__wrap ul_li navbar navbar-expand-lg">
-                <div className="xb-header__logo">
-                  <a href="/" className="navbar-brand">
-                    <img src="/img/logo/dhanwis-logo/Icon 1.png" alt="" width={'60'} />
-                    <span style={{ color: "#ffcc33", fontSize: '23px', fontWeight: 'bold' }}>Dhanwis</span>
-                  </a>
-                </div>
-                <button 
-                  className=" navbar-toggler"
-                  type="button"
-                  onClick={() => setShowNav(!showNav)}
-                >
-                  <span className="navbar-toggler-icon"></span>
-                </button>
-                <nav className={`main-menu collapse navbar-collapse ${showNav ? 'show' : ''}`} id="navbarNav">
-                  <ul className="mx-5 navbar-nav">
-                    <li className="nav-item">
-                      <NavLink to={'/'} className="nav-link" activeClassName="active-link">
+                <nav className="main-menu collapse navbar-collapse">
+                  <ul>
+                    <li className="menu-item-has-children active">
+                      <NavLink to={"/"}>
+                        {" "}
                         <span>Home</span>
                       </NavLink>
                     </li>
-                    <li className="nav-item">
-                      <NavLink to="/about" className="nav-link" activeClassName="active-link">
+                    <li className="menu-item-has-children">
+                      <NavLink to={"/about"}>
                         <span>About us</span>
                       </NavLink>
                     </li>
-                    <li className="nav-item">
-                      <NavLink to="/portfolio-section" className="nav-link" activeClassName="active-link">
+                    <li className="menu-item-has-children">
+                      <NavLink to={"/portfolio-section"}>
                         <span>Portfolio</span>
                       </NavLink>
                     </li>
-                    <li className="nav-item">
-                      <a href="#services" className="nav-link" activeClassName="active-link"><span>Services</span></a>
+                    <li className="menu-item-has-children">
+                      <a href="#services">
+                        <span>Services</span>
+                      </a>
                       <ul className="submenu">
-                        <li className="nav-item">
-                          <NavLink to="/appDevelopment" className="nav-link" activeClassName="active-link">
+                        <li>
+                          <NavLink to={"/appDevelopment"}>
                             <span>Mobile App Development</span>
                           </NavLink>
                         </li>
-                        {/* ... add other services ... */}
-                        <li className="nav-item">
-                          <NavLink to="/webDevelopment" className="nav-link" activeClassName="active-link">
-                            <span>Web Development</span>
-                          </NavLink>
+                        <li>
+                          {" "}
+                          <NavLink to={"/softwaredevelopment"}>
+                            <span>Software Development</span>
+                          </NavLink>{" "}
                         </li>
+                        <li>
+                          <NavLink to={"/digital-marketing"}>
+                            <span>Digital Marketing</span>
+                          </NavLink>{" "}
+                        </li>
+                        <li>
+                          {" "}
+                          <NavLink to={"/webDevelopment"}>
+                            <span>Web Design &amp; Development</span>
+                          </NavLink>{" "}
+                        </li>
+                        {/* <li><a href="checkout.html"><span>ERP Development</span></a></li> */}
                       </ul>
                     </li>
-                    <li className="nav-item">
-                      <NavLink to="/careers" className="nav-link" activeClassName="active-link">
+                    <li>
+                      <NavLink to={"/careers"}>
                         <span>Careers</span>
                       </NavLink>
                     </li>
-                    <li className="nav-item">
-                      <NavLink to="/contact" className="nav-link" activeClassName="active-link">
+
+                    <li className="menu-item-has-children">
+                      <NavLink to={"/contact"}>
                         <span>Contact</span>
                       </NavLink>
                     </li>
                   </ul>
                 </nav>
+
+                <div className="xb-header-wrap style-black">
+                  <div
+                    className={`xb-header-menu ${showMobile ? "active" : ""}`}
+                  >
+                    <div className="xb-header-menu-scroll">
+                      <div
+                        className="xb-menu-close xb-hide-xl xb-close"
+                        onClick={() => setShowMobile(false)}
+                      />
+                      <div className="xb-logo-mobile xb-hide-xl">
+                        <NavLink to={"/"}>
+                          {" "}
+                          <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2>
+                          <small className="text-muted">TechInfoSolution</small>
+                        </NavLink>
+                      </div>
+                      <nav className="xb-header-nav">
+                        <ul className="xb-menu-primary clearfix">
+                          <li className="menu-item-has-children active">
+                            <NavLink to={"/"}>
+                              {" "}
+                              <span>Home</span>
+                            </NavLink>
+                          </li>
+                          <li className="menu-item-has-children">
+                            <NavLink to={"/about"}>
+                              <span>About us</span>
+                            </NavLink>
+                          </li>
+                          <li className="menu-item-has-children">
+                            <NavLink to={"/portfolio-section"}>
+                              <span>Portfolio</span>
+                            </NavLink>
+                          </li>
+                          <li className="menu-item-has-children">
+                            <a href="#services">
+                              <span>Services</span>
+                            </a>
+                            <ul className="submenu">
+                              <li>
+                                <NavLink to={"/appDevelopment"}>
+                                  <span>Mobile App Development</span>
+                                </NavLink>
+                              </li>
+                              <li>
+                                {" "}
+                                <NavLink to={"/softwaredevelopment"}>
+                                  <span>Software Development</span>
+                                </NavLink>{" "}
+                              </li>
+                              <li>
+                                <NavLink to={"/digital-marketing"}>
+                                  <span>Digital Marketing</span>
+                                </NavLink>{" "}
+                              </li>
+                              <li>
+                                {" "}
+                                <NavLink to={"/webDevelopment"}>
+                                  <span>Web Design &amp; Development</span>
+                                </NavLink>{" "}
+                              </li>
+                              {/* <li><a href="checkout.html"><span>ERP Development</span></a></li> */}
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="/careers">
+                              <span>Careers</span>
+                            </a>
+                          </li>
+
+                          <li className="menu-item-has-children">
+                            <NavLink to={"/contact"}>
+                              <span>Contact</span>
+                            </NavLink>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <div className="xb-header-menu-backdrop" />
+                </div>
               </div>
-              
-              {showNav && (
-                <div
-                  className="mobile-menu-overlay"
-                  onClick={() => setShowNav(false)}
-                ></div>
-              )}
+
               <div className="xb-header__right ul_li">
                 <div className="d-none d-lg-block">
                   <a
                     className="xb-header-bar offcanvas-sidebar-btn ml-30"
-                    onClick={() => setShow(!show)}
+                    //href="javascript:void(0);"
+                    onClick={() => setShowSide(!showSide)} // side view btn;
                   >
                     <div className="xb-header-bar__icon">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
+                      <span />
+                      <span />
+                      <span />
+                      <span />
+                    </div>
+                  </a>
+                </div>
+                <div className="header-bar d-lg-none">
+                  <a
+                    className="xb-header-bar xb-nav-mobile ml-30"
+                    // href="javascript:void(0);"
+                    onClick={() => setShowMobile(!showMobile)} // mobile view btn;
+                  >
+                    <div className="xb-header-bar__icon">
+                      <span />
+                      <span />
+                      <span />
+                      <span />
                     </div>
                   </a>
                 </div>
@@ -146,38 +244,22 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* header end */}
-      {/* header search start */}
-      {/* <div
-        className={`header-search-form-wrapper style-black ${showSearch ? "open" : ""
-          }`}
-      >
-        <div
-          className="xb-search-close xb-close"
-          onClick={() => setShowSearch(false)}
-        />
-        <div className="header-search-container">
-          <form role="search" className="search-form" action="#">
-            <input
-              type="search"
-              className="search-field"
-              placeholder="Search …"
-              name="s"
-            />
-          </form>
-        </div>
-      </div> */}
-      {/* header search end */}
-      {/* sidebar-info start */}
-      <div className={`offcanvas-sidebar ${show ? "active" : ""}`}>
+      <div className={`offcanvas-sidebar ${showSide ? "active" : ""}`}>
         <div className="sidebar-menu-close">
-          <a className="xb-close" onClick={() => setShow(false)} />
+          <a className="xb-close" onClick={() => setShowSide(false)} />
         </div>
         <div className="sidebar-top mb-65">
           <div className="sidebar-logo mb-40">
-            <a href="index.html">
-              <img src="/img/logo/Dhanwis Logo-01.png" width={'150'} height={'auto'} alt="logo" />
-            </a>
+            <div>
+              <a className="navbar-brand" href="#">
+                <div className="d-flex">
+                  <NavLink to={"/"}>
+                    {" "}
+                    <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2>
+                  </NavLink>
+                </div>
+              </a>
+            </div>
           </div>
           <div className="sidebar-content">
             Creative Digital Strategies <br /> for Business Success
@@ -214,41 +296,6 @@ export default function Navbar() {
                   <img src="/img/icon/star-2.svg" alt="" />
                 </span>
                 dhanwistechinfosolutions@gmail.com
-              </a>
-            </li>
-          </ul>
-        </div>
-        {/* <div className="sidebar-newsletter">
-          <h4 className="sidebar-heading">Get Regular Updated</h4>
-          <form
-            action="#"
-            className="sidebar-newsletter-form mr-footer-newsletter"
-          >
-            <span className="icon">
-              <img src="/img/icon/mr-sms-tracking.svg" alt="" />
-            </span>
-            <input type="text" placeholder="Your Email Address" />
-            <button>
-              <img src="/img/icon/mr_arrow_up.svg" alt="arrow" />
-            </button>
-          </form>
-        </div> */}
-        <div className="sidebar-social mr-footer-info ">
-          <h4 className="sidebar-heading">follwo us</h4>
-          <ul className="xb-item--social ul_li">
-            <li>
-              <a href="https://www.facebook.com/dhanwisinfo">
-                <i className="fab fa-facebook-f" />
-              </a>
-            </li>
-            <li>
-              <a href="#!">
-                <i className="fab fa-linkedin-in" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/dhanwistechinfosolutions/">
-                <i className="fab fa-instagram" />
               </a>
             </li>
           </ul>

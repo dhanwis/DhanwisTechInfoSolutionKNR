@@ -3,8 +3,8 @@ import './Portfolio.css'
 
 export default function Portfolio() {
     return (
-        <div>
-            <header style={{ background: '#333', textAlign: 'center', padding: '20px', color: 'wheat' }}>
+        <div className=''>
+            <header className='d-sm-none d-lg-block' style={{ background: '#333', textAlign: 'center', padding: '20px', color: 'wheat' }}>
                 <h1 style={{ letterSpacing: '2px' }}>Beautiful touch By Dhanwis</h1>
             </header>
 
@@ -27,7 +27,7 @@ export default function Portfolio() {
                     <img src="img/portfolio/Exora Conventions and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_07_15.png" alt="Project 2" />
                     <h2>Travel & Tourisom</h2>
                     <p>Here at Eazygo Travels, we believe that fulfilling travel experiences begin not only with choosing the right destination.</p>
-                    <a href="#">View Project</a>
+                    <a href="http://www.eazygotravels.com/">View Project</a>
                 </div>
 
 
@@ -37,7 +37,7 @@ export default function Portfolio() {
                     <img src="img/portfolio/Exora Conventions and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_08_35.png" alt="Project 3" />
                     <h2>Interior Design</h2>
                     <p>Goldman Interiors, the company was formed with a vision to provide Innovative, Cost Effective technical service solutions in the region..</p>
-                    <a href="#">View Project</a>
+                    <a href="https://goldmaninteriors.com/">View Project</a>
                 </div>
 
             </section>
@@ -51,7 +51,7 @@ export default function Portfolio() {
                     <img src="img/portfolio/Exora Conventions and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_08_24.png" alt="Project 1" />
                     <h2>Ashraya Medicals</h2>
                     <p>Goldman Interiors, the company was formed with a vision to provide Innovative, Cost Effective technical service solutions in the region.</p>
-                    <a href="#">View Project</a>
+                    <a href="http://ashrayamedicals.com/">View Project</a>
                 </div>
 
                 <div class="project" data-aos="fade-down"
