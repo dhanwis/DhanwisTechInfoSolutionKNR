@@ -113,7 +113,7 @@ export default function Navbar() {
                       </ul>
                     </li>
                     <li>
-                    <NavLink to={"/careers"}>
+                      <NavLink to={"/careers"}>
                         <span>Careers</span>
                       </NavLink>
                     </li>

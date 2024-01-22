@@ -1,5 +1,5 @@
 import React from "react";
-import Chatboat from "../../Pages/Developments/ChatbotAI";
+import ChatbotAI from "../Chatbot/ChatbotAI";
 
 export default function Banner() {
   return (
@@ -96,15 +96,11 @@ export default function Banner() {
                       alt=""
                     />
                   </div>
-                  <div class="chart chart--4">
-                    {/* <img
-                      data-aos="zoom-in"
-                      data-aos-duration="600"
-                      data-aos-delay="800"
-                      src="/img/hero/chart.png"
-                      alt=""
-                    /> */}
-                    <Chatboat />
+                  <div class="chart chart--4" data-aos="zoom-in"
+                    data-aos-duration="600"
+                    data-aos-delay="800">
+
+                    <ChatbotAI />
                   </div>
                 </div>
               </div>
