@@ -32,7 +32,7 @@ export default function Banner() {
                   <span class="icon">
                     <img src=" /img/icon/m_star.png" alt="" />
                   </span>{" "}
-                  Growth Through Digital Marketing{" "}
+                  Growth Through Digital Solutions{" "}
                   <img id="reload" src="/img/icon/decor2.png" alt="" />
                 </h2>
                 <p
@@ -40,9 +40,11 @@ export default function Banner() {
                   data-aos="fade-up"
                   data-aos-duration="500"
                   data-aos-delay="400"
+                  
                 >
-                  Digital marketing involves leveraging online channels <br />{" "}
-                  and platforms to connect with potential customers.
+                 Our all-inclusive range of digital solutions includes web development,  <br />{" "} mobile app development, and digital marketing, guaranteeing a comprehensive approach to fulfill your company requirements.  
+                  
+                 
                 </p>
                 <div
                   class="xb-item--btn"

@@ -32,7 +32,7 @@ export default function About() {
                       Power of Technology
                     </span>
                   </h2>
-                  <p className="description mt-3">
+                  <p style={{textAlign:'justify'}} className="description mt-3">
                     For over a decade, the world has dramatically changed its
                     course using IT technologies.Dhanwis understand the
                     necessity and have started giving our contribution in this
@@ -44,8 +44,7 @@ export default function About() {
                     development tech wizards, adept at brewing innovative and
                     dynamic e-solutions. Our value-added business services and
                     solutions add a spring to your portfolio of services to
-                    enhance user satisfaction. Automation is our goal. We factor
-                    technology to take the service to a new high. Individually
+                    enhance user satisfaction. Individually
                     we have experience in variegated fields like designing and
                     developing apt apps (both web and mobile) for start-ups,
                     CRM, Attendance and payroll management, apart from providing
@@ -54,12 +53,14 @@ export default function About() {
                   </p>
                 </div>
 
-                <div className="col-lg-6 ">
+                <div className="col-lg-6">
                   <img
-                    src="img/web.jpeg"
+                  
+                  src="img/web.jpeg"
                     width={"500"}
                     alt="img"
-                    className="mt-3 "
+
+                      className="img-fluid mt-10"
                     data-aos="fade-up"
                     data-aos-duration="500"
                     data-aos-delay="200"

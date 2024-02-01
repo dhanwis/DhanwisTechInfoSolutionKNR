@@ -10,9 +10,9 @@ export default function Client() {
                 <div className="row">
                     <div className="col-12">
                         <h2 className="mainhead center" style={{ color: 'white' }}>
-                            Some of Our <span style={{ color: "#ffcc33" }}>Happy Clients</span>
+                        Our <span style={{ color: "#ffcc33" }}>Happy Clients</span>
                         </h2>
-                        <p className="hddesc center">
+                        <p className="hddesc center" style={{marginTop:"10px"}}>
                             We collaborate closely with a broad spectrum of clients from various
                             industries and places.
                         </p>

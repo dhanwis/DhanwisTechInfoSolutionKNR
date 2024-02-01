@@ -3,13 +3,13 @@ import './Fields.css'
 
 export default function Fields() {
     return (
-        <div className='container'>
+        <div className=' '>
 
             <div className="mt-5 row" data-aos="fade-right" id="services">
                 <div class="col">
-                    <div className="why-dhanwis">
+                    <div className="why-dhanwis" style={{marginTop:"5px"}}>
                         <h1 class="mainhead bighead center" >
-                            Why <span style={{ color: "#ffcc33" }}>Dhanwis Tech Info</span>
+                            Why <span style={{ color: "#ffcc33" }}>Dhanwis TechInfo</span>
                         </h1>
                         <p className="description">
                             We are here precision engineered for excellence in quality. Our
@@ -28,7 +28,7 @@ export default function Fields() {
                                 We Offers the best{" "}
                                 <span style={{ color: "#ffcc33" }}>Technology Enhancement</span>
                             </h2>
-                            <p class="description">
+                            <p class="description" >
                                 {" "}
                                 Everything you require to deliver a better project will be
                                 provided for you. We'll guide your project through every stage
@@ -40,18 +40,15 @@ export default function Fields() {
                 </div>
             </div>
 
-            <div className={`mt-5 cmpad`}>
+            <div className={`p-4 cmpad`}>
                 <div className="row">
                     <div className={`col-lg-6`}>
                         <h2 className="mainhead">
                             Business niches that
                             <br /> <span style={{ color: '#ffcc33' }}>love work with us</span>
                         </h2>
-                        <p className="description mt-3">
-                            We use the right mix of digital marketing services. we are here to
-                            provide the best content to break your marketing efforts. get the best
-                            content marketing strategies. we create the most amazing customer
-                            experiences. Successful campaigns that deliver on business objectives.
+                        <p className="description mt-3" style={{textAlign:'justify'}}>
+                        We are here to assist you with all your virtual base arrangements, at simply a tick. Getting you carefully assembled innovation arrangements with a spot of dynamic and customized contact. DHANWIS is a developing and natural plan organization, in fact and inventively gifted to make an interpretation of your image into its genuine computerized life.
                         </p>
                     </div>
 

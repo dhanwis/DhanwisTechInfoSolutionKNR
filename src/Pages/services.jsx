@@ -34,7 +34,7 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p>
+                <p style={{textAlign: "justify", marginTop:"5px"}}>
                   We craft creative and effective websites using the best
                   design techniques in the business. Our design uses the
                   finest elements that help the business to elevate its
@@ -69,7 +69,7 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p>
+                <p style={{textAlign: "justify", marginTop:"5px"}}>
                   We offer custom software development services using all
                   accepted and development technologies. Our software
                   development service adapts seamlessly to your project
@@ -104,7 +104,7 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p>
+                <p style={{textAlign: "justify", marginTop:"5px"}}>
                   We build mobile applications that function perfectly with
                   the whole spectrum of mobile devices and online platforms.
                   Our experts cover an entire cycle of application design,
@@ -139,7 +139,7 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p>
+                <p style={{textAlign: "justify", marginTop:"5px"}}>
                   Expand your products and services to reach the global
                   level with the most cost-effective method. Our digital
                   marketing service ensures the best rates of conversion of
@@ -174,7 +174,7 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p>
+                <p style={{textAlign: "justify", marginTop:"5px"}}>
                   The evolution of the ERP industry, which is driven by
                   trends such as extensibility and integration, human-ERP
                   interaction, SaaS adoption, vertical-specific
@@ -194,7 +194,8 @@ export default function Services() {
           <div className="colbox">
             <div className="boxicon">
               <span className="services-icon">
-                <i class="fa-solid fa-gear"></i>
+                {/* <i class="fa-solid fa-gear"></i> */}
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
               </span>
             </div>
             {/* boxicon */}
@@ -206,7 +207,7 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p>
+                <p style={{textAlign: "justify", marginTop:"5px"}}>
                   Enhance your business on the world’s top search engines.
                   We will help you improve the organic visibility of your
                   business keywords and organic traffic to the website.

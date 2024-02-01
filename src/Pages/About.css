@@ -70,3 +70,10 @@
 .heading-plus-sub h1 {
   font-size: 50px;
 }
+
+@media (min-width: 992px) {
+  .mt-10 {
+    margin-left: 2.5rem;
+    margin-top: 5rem;
+  }
+}

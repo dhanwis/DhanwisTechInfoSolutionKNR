@@ -25,7 +25,7 @@ export default function Contact() {
                     <div className='col-lg-6'>
                         <div className="mt-5 ld_fancy_heading_657e0f4f82117 ">
                             <h3 className="ld-fh-element" >
-                                Searching for perfect business partner in SaaS?
+                                Searching for perfect business Solutions?
                             </h3>
                         </div>
 
@@ -56,13 +56,12 @@ export default function Contact() {
 
                                         <h6 style={{ marginTop: '4 rem' }}>Corporate Office:</h6>{" "}
                                         <p className='contact-descripton'>
-                                            FOXIOM LEADS PVT LTD 16&amp;17 2nd floor Neo space 2 Kinfra Techno
-                                            Industrial Park Calicut University (po) Kakkanchery Malappuram
+                                           Dhanwis Techinfo Solutions 1st floor TKH Complex, Opp Jawahar Library,Yogasala Road, Kannur, 670001
                                         </p>{" "}
 
-                                        <div>
+                                        {/* <div>
                                             <h6>Regional Office:</h6> <p style={{ marginTop: '1em', marginBottom: '1em' }}>26, Mecca Street, Fahaheel, Kuwait</p>
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                     <div className="  d-flex justify-content-between">
@@ -87,9 +86,11 @@ export default function Contact() {
                                                     {" "}
                                                     <a
                                                          
-                                                        href="mailto:hr@foxiom.com"
+                                                        href="mailto:info@dhanwis.com"
                                                     >
                                                         info@dhanwis.com
+                                                        <br/>
+                                                        dhanwisinfo@gmail.com
                                                     </a>
                                                 </h6>
                                             </div>
@@ -118,12 +119,12 @@ export default function Contact() {
                                                     <span style={{ color: "#000080" }}>
                                                         <a
                                                             
-                                                            href="tel:+919895111400"
+                                                            href="tel:+918086 487 219 "
                                                         >
-                                                            +91 9895111400 |{" "}
+                                                            +91 8086 487 219 |{" "}
                                                         </a>
                                                         <a   href="tel:+96566011953">
-                                                            +965 66011953
+                                                            +9961 487 219
                                                         </a>
                                                     </span>
                                                 </h6>

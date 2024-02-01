@@ -53,7 +53,7 @@ export default function Navbar() {
           </div>
         </div>
         {/* xb-header__wrap xb-header-has-arrow xb-header */}
-        <div className="mt-3">
+        <div className="">
           <div className="container">
             <div className="ul_li_between">
               {/* xb-header__logo */}
@@ -262,24 +262,33 @@ export default function Navbar() {
             </div>
           </div>
           <div className="sidebar-content">
-            Creative Digital Strategies <br /> for Business Success
+            Creative Digital Solutions  <br /> for Business Success
           </div>
         </div>
         <div className="sidebar-contact-info mb-65">
           <h4 className="sidebar-heading">Contact Information</h4>
           <ul className="sidebar-info-list list-unstyled">
+          <li>
+              <span>
+                <img src="/img/icon/star-2.svg" alt="" />
+              </span>
+              1st Floor, TKH Complex,
+              Opp Jawahar Library
+            </li>
+            
             <li>
               <span>
                 <img src="/img/icon/star-2.svg" alt="" />
               </span>
-              Kannur Kerala, India, 670702
+              Yogashala Road, Kannur, Kerala, India, 670001
             </li>
+
             <li>
               <a href="#!">
                 <span>
                   <img src="/img/icon/star-2.svg" alt="" />
                 </span>
-                +91 996 148 72 19
+                +91 8086 487 219
               </a>
             </li>
             <li>
@@ -287,7 +296,16 @@ export default function Navbar() {
                 <span>
                   <img src="/img/icon/star-2.svg" alt="" />
                 </span>
-                +91 808 648 72 19
+                +91 9961 487 219
+              </a>
+            </li>
+
+            <li>
+              <a href="#!">
+                <span>
+                  <img src="/img/icon/star-2.svg" alt="" />
+                </span>
+                +91 9946 487 219
               </a>
             </li>
             <li>

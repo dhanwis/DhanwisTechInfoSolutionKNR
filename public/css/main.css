@@ -3278,7 +3278,7 @@ body[data-aos-easing="ease"] [data-aos] {
 
 @media screen and (min-width: 768px) {
    .site-header{
-    padding: 1em;
+    padding: .5em;
    }
 }
 
