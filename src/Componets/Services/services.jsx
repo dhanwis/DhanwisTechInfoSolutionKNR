@@ -22,7 +22,7 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="http://127.0.0.1:5173/webDevelopment" className="h4">
+            <a href="/webDevelopment" className="h4">
               Web Design &amp; Development
             </a>
             <div className="boxcont">
@@ -86,7 +86,7 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="http://127.0.0.1:5173/appDevelopment" className="h4">
+            <a href="/appDevelopment" className="h4">
               Mobile App Development
             </a>
             <div className="boxcont">
@@ -117,7 +117,7 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="" className="h4">
+            <a href="/digital-marketing" className="h4">
               Digital Marketing
             </a>
             <div className="boxcont">
@@ -149,7 +149,7 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="" className="h4">
+            <a href="/erp-development" className="h4">
               ERP Development
             </a>
             <div className="boxcont">
@@ -179,7 +179,7 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="" className="h4">
+            <a href="/digital-marketing" className="h4">
               Search Engine Optimisation
             </a>
             <div className="boxcont">

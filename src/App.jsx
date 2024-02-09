@@ -19,6 +19,9 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Soon from "./Componets/Soon/Soon";
 import Portfolio from "./Pages/Portfolio/Portfolio";
+import DigitalMarketing from "./Pages/Digital/Newdigital";
+import ErpDevelopment from "./Pages/Erpdevelopment/ErpDevelopment";
+import Softdevelopment from "./Pages/Soft/Softdevelopment";
 
 function App() {
   useEffect(() => {
@@ -34,6 +37,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/appDevelopment" element={<AppDevelopment />} />
           <Route path="/webDevelopment" element={<WebDevelopment />} />
+          <Route path="/digital-marketing" element={<DigitalMarketing />} />
+          <Route path="/erp-developement" element={<ErpDevelopment />} />
+          <Route path="/software-development" element={<Softdevelopment />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/comming-soon" element={<Soon />} />

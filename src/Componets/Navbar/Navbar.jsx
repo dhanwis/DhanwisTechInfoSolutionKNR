@@ -60,7 +60,13 @@ export default function Navbar() {
               <div className="">
                 <NavLink to={"/"}>
                   {" "}
-                  <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2>
+                  {/* <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2> */}
+                  <img
+                    src="/img/logo/dhanwis-logo/Name_3-removebg-preview.png"
+                    alt=""
+                    className="img-fluid"
+                    width={130}
+                  />
                 </NavLink>
               </div>
               <div className="main-menu__wrap ul_li navbar navbar-expand-lg">
@@ -114,15 +120,21 @@ export default function Navbar() {
                             <span>Mobile App Development</span>
                           </NavLink>
                         </li>
-                        {/* <li>
+                        <li>
                           {" "}
-                          <NavLink to={"/softwaredevelopment"}>
+                          <NavLink to={"/software-development"}>
                             <span>Software Development</span>
                           </NavLink>{" "}
-                        </li> */}
+                        </li>
                         <li>
                           <NavLink to={"/digital-marketing"}>
                             <span>Digital Marketing</span>
+                          </NavLink>{" "}
+                        </li>
+
+                        <li>
+                          <NavLink to={"/erp-developement"}>
+                            <span>Erp Development</span>
                           </NavLink>{" "}
                         </li>
                         <li>
