@@ -102,7 +102,7 @@ export default function Banner() {
                     data-aos-duration="600"
                     data-aos-delay="800">
 
-                    <ChatbotAI />
+                    {/* <ChatbotAI /> */}
                   </div>
                 </div>
               </div>

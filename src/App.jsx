@@ -1,12 +1,12 @@
 import Navbar from "./Componets/Navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Banner from "./Componets/Banner/Banner";
-import Services from "./Pages/services";
+import Services from "./Componets/Services/services";
 import Client from "./Pages/Client-section";
 import Contact from "./Pages/Contact";
-import './App.css'
+import "./App.css";
 import Fields from "./Componets/Fields";
-import 'react-chatbot-kit/build/main.css';
+import "react-chatbot-kit/build/main.css";
 
 import About from "./Pages/About";
 import AppDevelopment from "./Pages/Developments/AppDevelopment";
@@ -21,12 +21,9 @@ import Soon from "./Componets/Soon/Soon";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 
 function App() {
-
   useEffect(() => {
     AOS.init();
   }, []);
-
-
 
   return (
     <div data-aos-delay="0" data-aos-easing="ease" data-aos-duration="400">
@@ -62,13 +59,26 @@ const Home = () => {
 
   return (
     <div className="all-container">
-      {loading ?
+      {loading ? (
         <div className="loading-screen">
-          <img src="img/logo/Dhanwis Logo-01.png" alt="Team Logo" width="300" height="auto" data-aos="zoom-out-down" data-aos-duration="1000" />
-        </div> : <> <Banner />
+          <img
+            src="img/logo/Dhanwis Logo-01.png"
+            alt="Team Logo"
+            width="400"
+            height="auto"
+            data-aos="zoom-out-down"
+            data-aos-duration="1000"
+          />
+        </div>
+      ) : (
+        <>
+          {" "}
+          <Banner />
           <Fields />
           <Services />
-          <Client /></>}
+          <Client />
+        </>
+      )}
     </div>
   );
 };

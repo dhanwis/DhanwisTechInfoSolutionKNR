@@ -66,24 +66,46 @@ export default function Navbar() {
               <div className="main-menu__wrap ul_li navbar navbar-expand-lg">
                 <nav className="main-menu collapse navbar-collapse">
                   <ul>
-                    <li className="menu-item-has-children active">
-                      <NavLink to={"/"}>
+                    <li className="menu-item-has-children">
+                      <NavLink
+                        to={"/"}
+                        className={`nav-link ${
+                          location.pathname === "/" ? "active" : ""
+                        }`}
+                      >
                         {" "}
                         <span>Home</span>
                       </NavLink>
                     </li>
                     <li className="menu-item-has-children">
-                      <NavLink to={"/about"}>
+                      <NavLink
+                        to={"/about"}
+                        className={`nav-link ${
+                          location.pathname === "/about" ? "active" : ""
+                        }`}
+                      >
                         <span>About us</span>
                       </NavLink>
                     </li>
                     <li className="menu-item-has-children">
-                      <NavLink to={"/portfolio-section"}>
+                      <NavLink
+                        to={"/portfolio-section"}
+                        className={`nav-link ${
+                          location.pathname === "/portfolio-section"
+                            ? "active"
+                            : ""
+                        }`}
+                      >
                         <span>Portfolio</span>
                       </NavLink>
                     </li>
                     <li className="menu-item-has-children">
-                      <a href="#services">
+                      <a
+                        href="#services"
+                        className={`nav-link ${
+                          location.pathname === "#services" ? "active" : ""
+                        }`}
+                      >
                         <span>Services</span>
                       </a>
                       <ul className="submenu">
@@ -92,12 +114,12 @@ export default function Navbar() {
                             <span>Mobile App Development</span>
                           </NavLink>
                         </li>
-                        <li>
+                        {/* <li>
                           {" "}
                           <NavLink to={"/softwaredevelopment"}>
                             <span>Software Development</span>
                           </NavLink>{" "}
-                        </li>
+                        </li> */}
                         <li>
                           <NavLink to={"/digital-marketing"}>
                             <span>Digital Marketing</span>
@@ -113,13 +135,23 @@ export default function Navbar() {
                       </ul>
                     </li>
                     <li>
-                      <NavLink to={"/careers"}>
+                      <NavLink
+                        to={"/careers"}
+                        className={`nav-link ${
+                          location.pathname === "/careers" ? "active" : ""
+                        }`}
+                      >
                         <span>Careers</span>
                       </NavLink>
                     </li>
 
                     <li className="menu-item-has-children">
-                      <NavLink to={"/contact"}>
+                      <NavLink
+                        to={"/contact"}
+                        className={`nav-link ${
+                          location.pathname === "/contact" ? "active" : ""
+                        }`}
+                      >
                         <span>Contact</span>
                       </NavLink>
                     </li>
@@ -170,12 +202,12 @@ export default function Navbar() {
                                   <span>Mobile App Development</span>
                                 </NavLink>
                               </li>
-                              <li>
+                              {/* <li>
                                 {" "}
                                 <NavLink to={"/softwaredevelopment"}>
                                   <span>Software Development</span>
                                 </NavLink>{" "}
-                              </li>
+                              </li> */}
                               <li>
                                 <NavLink to={"/digital-marketing"}>
                                   <span>Digital Marketing</span>
@@ -262,20 +294,19 @@ export default function Navbar() {
             </div>
           </div>
           <div className="sidebar-content">
-            Creative Digital Solutions  <br /> for Business Success
+            Creative Digital Solutions <br /> for Business Success
           </div>
         </div>
         <div className="sidebar-contact-info mb-65">
           <h4 className="sidebar-heading">Contact Information</h4>
           <ul className="sidebar-info-list list-unstyled">
-          <li>
+            <li>
               <span>
                 <img src="/img/icon/star-2.svg" alt="" />
               </span>
-              1st Floor, TKH Complex,
-              Opp Jawahar Library
+              1st Floor, TKH Complex, Opp Jawahar Library
             </li>
-            
+
             <li>
               <span>
                 <img src="/img/icon/star-2.svg" alt="" />

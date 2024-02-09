@@ -60,6 +60,15 @@ export default function AppDevelopment() {
               <Col>
                 <div className="android p-5 one">
                   <div className="left-side mt-4">
+                    <img
+                      src="/img/Getting-started-with-iOS-development.jpg"
+                      alt=""
+                      width={"500px"}
+                      height={"auto"}
+                    />
+                  </div>
+
+                  <div className="mt-4 ms-lg-5">
                     <div>
                       <h1>IOS Development</h1>
                     </div>
@@ -75,15 +84,6 @@ export default function AppDevelopment() {
                         solution required.
                       </p>
                     </div>
-                  </div>
-
-                  <div className="mt-4">
-                    <img
-                      src="/img/Getting-started-with-iOS-development.jpg"
-                      alt=""
-                      width={"500px"}
-                      height={"auto"}
-                    />
                   </div>
                 </div>
               </Col>

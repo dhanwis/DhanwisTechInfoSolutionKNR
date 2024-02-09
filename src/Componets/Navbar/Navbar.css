@@ -1,7 +1,6 @@
 @media only screen and (max-width: 991px) {
-    /* Add styles for screens less than 991px */
-    .navbar-brand {
-      margin-top: 3rem; /* Adjust the margin based on your design */
-    }
+  /* Add styles for screens less than 991px */
+  .navbar-brand {
+    margin-top: 3rem; /* Adjust the margin based on your design */
   }
-  
+}
