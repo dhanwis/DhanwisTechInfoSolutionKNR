@@ -34,6 +34,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" Component={Home} />
+          <Route path="*" element={<Soon />} />
           <Route path="/about" element={<About />} />
           <Route path="/appDevelopment" element={<AppDevelopment />} />
           <Route path="/webDevelopment" element={<WebDevelopment />} />
@@ -42,7 +43,7 @@ function App() {
           <Route path="/software-development" element={<Softdevelopment />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
-          <Route path="/comming-soon" element={<Soon />} />
+          {/* <Route path="/comming-soon" element={<Soon />} /> */}
           <Route path="/portfolio-section" element={<Portfolio />} />
         </Routes>
         <Footer />

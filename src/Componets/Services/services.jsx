@@ -54,7 +54,7 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="" className="h4">
+            <a href="/software-development" className="h4">
               Software Development
             </a>
             <div className="boxcont">
@@ -149,7 +149,7 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="/erp-development" className="h4">
+            <a href="/erp-developement" className="h4">
               ERP Development
             </a>
             <div className="boxcont">

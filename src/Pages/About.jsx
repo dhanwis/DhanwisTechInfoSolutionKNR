@@ -16,7 +16,7 @@ export default function About() {
                   <h1 className="mb-3 mt-5">
                     Dhanwis
                     <br />
-                    TechInfo Solution
+                    TechInfo Solutions
                   </h1>
                 </div>
               </div>

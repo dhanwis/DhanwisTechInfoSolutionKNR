@@ -12,7 +12,7 @@ export default function Navbar() {
         id="xb-header-area"
         className="site-header header-marketing is-sticky"
       >
-        <div className="xb-header__top">
+        <div className="xb-header__top p-2">
           <div className="container m-auto ul_li_between">
             <div className="xb-social ul_li">
               <span>Follow us :</span>
@@ -39,7 +39,8 @@ export default function Navbar() {
                 </li>
               </ul>
             </div>
-            <div className="xb-header__language pl-70">
+
+            {/* <div className="xb-header__language pl-70">
               <div className="">
                 <button className="btn btn-warning btn-sm mb-2">
                   {" "}
@@ -49,7 +50,7 @@ export default function Navbar() {
                   </span>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* xb-header__wrap xb-header-has-arrow xb-header */}
