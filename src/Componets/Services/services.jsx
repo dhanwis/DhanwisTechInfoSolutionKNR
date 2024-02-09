@@ -5,8 +5,6 @@ import { NavLink } from "react-router-dom";
 export default function Services() {
   return (
     <div className="container  py-5" id="services">
-
-
       <div class="line-long-area" data-aos="fade-up-right">
         <div class="line-long"></div>
       </div>
@@ -20,7 +18,6 @@ export default function Services() {
         >
           <div className="colbox">
             <div className="boxicon">
-
               <span className="services-icon">
                 <i class="fa-solid fa-globe"></i>
               </span>
@@ -34,11 +31,11 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p style={{textAlign: "justify", marginTop:"5px"}}>
-                  We craft creative and effective websites using the best
-                  design techniques in the business. Our design uses the
-                  finest elements that help the business to elevate its
-                  brand presence in the web space.
+                <p style={{ textAlign: "justify", marginTop: "5px" }}>
+                  We craft creative and effective websites using the best design
+                  techniques in the business. Our design uses the finest
+                  elements that help the business to elevate its brand presence
+                  in the web space.
                 </p>
               </div>
             </div>
@@ -55,7 +52,6 @@ export default function Services() {
         >
           <div className="colbox">
             <div className="boxicon">
-
               <span className="services-icon">
                 <i class="fa-solid fa-computer"></i>
               </span>
@@ -69,7 +65,7 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p style={{textAlign: "justify", marginTop:"5px"}}>
+                <p style={{ textAlign: "justify", marginTop: "5px" }}>
                   We offer custom software development services using all
                   accepted and development technologies. Our software
                   development service adapts seamlessly to your project
@@ -90,7 +86,6 @@ export default function Services() {
         >
           <div className="colbox">
             <div className="boxicon">
-
               <span className="services-icon">
                 <i class="fa-solid fa-mobile-screen"></i>
               </span>
@@ -104,10 +99,10 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p style={{textAlign: "justify", marginTop:"5px"}}>
-                  We build mobile applications that function perfectly with
-                  the whole spectrum of mobile devices and online platforms.
-                  Our experts cover an entire cycle of application design,
+                <p style={{ textAlign: "justify", marginTop: "5px" }}>
+                  We build mobile applications that function perfectly with the
+                  whole spectrum of mobile devices and online platforms. Our
+                  experts cover an entire cycle of application design,
                   integration, and management services.
                 </p>
               </div>
@@ -125,7 +120,6 @@ export default function Services() {
         >
           <div className="colbox">
             <div className="boxicon">
-
               <span className="services-icon">
                 <i class="fa-solid fa-bullhorn"></i>
               </span>
@@ -139,11 +133,11 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p style={{textAlign: "justify", marginTop:"5px"}}>
-                  Expand your products and services to reach the global
-                  level with the most cost-effective method. Our digital
-                  marketing service ensures the best rates of conversion of
-                  potential leads to customers.
+                <p style={{ textAlign: "justify", marginTop: "5px" }}>
+                  Expand your products and services to reach the global level
+                  with the most cost-effective method. Our digital marketing
+                  service ensures the best rates of conversion of potential
+                  leads to customers.
                 </p>
               </div>
             </div>
@@ -160,7 +154,6 @@ export default function Services() {
         >
           <div className="colbox">
             <div className="boxicon">
-
               <span className="services-icon">
                 <i class="fa-solid fa-gear"></i>
               </span>
@@ -174,11 +167,10 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p style={{textAlign: "justify", marginTop:"5px"}}>
-                  The evolution of the ERP industry, which is driven by
-                  trends such as extensibility and integration, human-ERP
-                  interaction, SaaS adoption, vertical-specific
-                  standardization,
+                <p style={{ textAlign: "justify", marginTop: "5px" }}>
+                  The evolution of the ERP industry, which is driven by trends
+                  such as extensibility and integration, human-ERP interaction,
+                  SaaS adoption, vertical-specific standardization,
                 </p>
               </div>
             </div>
@@ -207,10 +199,10 @@ export default function Services() {
             </a>
             <div className="boxcont">
               <div className="boxdesc">
-                <p style={{textAlign: "justify", marginTop:"5px"}}>
-                  Enhance your business on the world’s top search engines.
-                  We will help you improve the organic visibility of your
-                  business keywords and organic traffic to the website.
+                <p style={{ textAlign: "justify", marginTop: "5px" }}>
+                  Enhance your business on the world’s top search engines. We
+                  will help you improve the organic visibility of your business
+                  keywords and organic traffic to the website.
                 </p>
               </div>
             </div>
@@ -220,10 +212,13 @@ export default function Services() {
         </div>
 
         <div className="col-12 btngroup mt-4">
-          <NavLink to={'/comming-soon'}><button className="btn btn-outline-warning" >Explore More</button></NavLink>
+          <NavLink to={"/comming-soon"}>
+            <button className="btn btn-outline-warning">Explore More</button>
+          </NavLink>
 
-          <NavLink to={'/comming-soon'}><button className="btn btn-warning">Get a Quote</button></NavLink>
-
+          <NavLink to={"/comming-soon"}>
+            <button className="btn btn-warning">Get a Quote</button>
+          </NavLink>
         </div>
       </div>
     </div>
