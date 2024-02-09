@@ -63,10 +63,10 @@ export default function Navbar() {
                   {" "}
                   {/* <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2> */}
                   <img
-                    src="/img/logo/dhanwis-logo/Name_3-removebg-preview.png"
+                    src="/img/logo/dhanwis-logo/Dhanwis Logo-01.png"
                     alt=""
                     className="img-fluid"
-                    width={130}
+                    width={111}
                   />
                 </NavLink>
               </div>
