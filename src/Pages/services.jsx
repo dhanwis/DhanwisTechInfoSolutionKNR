@@ -27,7 +27,7 @@ export default function Services() {
             </div>
             {/* boxicon */}
             <a
-              href="https://srvinfotech.com/web-design-development"
+              href="http://127.0.0.1:5173/webDevelopment"
               className="h4"
             >
               Web Design &amp; Development
@@ -35,10 +35,7 @@ export default function Services() {
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{textAlign: "justify", marginTop:"5px"}}>
-                  We craft creative and effective websites using the best
-                  design techniques in the business. Our design uses the
-                  finest elements that help the business to elevate its
-                  brand presence in the web space.
+                  We specialize in creating unique and impactful websites that incorporate cutting-edge design techniques. Our websites are crafted with the finest elements that help businesses establish a strong online presence and enhance their brand identity in the digital world.
                 </p>
               </div>
             </div>
@@ -62,7 +59,7 @@ export default function Services() {
             </div>
             {/* boxicon */}
             <a
-              href="https://srvinfotech.com/web-design-development"
+              href=""
               className="h4"
             >
               Software Development
@@ -70,10 +67,7 @@ export default function Services() {
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{textAlign: "justify", marginTop:"5px"}}>
-                  We offer custom software development services using all
-                  accepted and development technologies. Our software
-                  development service adapts seamlessly to your project
-                  requirements and business needs.
+                Our team specializes in providing tailored software development solutions using the latest technologies and industry best practices. We understand that every project has unique requirements and we strive to meet those needs while keeping in mind your business objectives.
                 </p>
               </div>
             </div>
@@ -97,7 +91,7 @@ export default function Services() {
             </div>
             {/* boxicon */}
             <a
-              href="https://srvinfotech.com/web-design-development"
+              href="http://127.0.0.1:5173/appDevelopment"
               className="h4"
             >
               Mobile App Development
@@ -105,10 +99,7 @@ export default function Services() {
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{textAlign: "justify", marginTop:"5px"}}>
-                  We build mobile applications that function perfectly with
-                  the whole spectrum of mobile devices and online platforms.
-                  Our experts cover an entire cycle of application design,
-                  integration, and management services.
+                Our team specializes in creating mobile apps that seamlessly work across various mobile devices and online platforms. We offer end-to-end solutions, from designing and integrating the app to managing its entire lifecycle.
                 </p>
               </div>
             </div>
@@ -132,7 +123,7 @@ export default function Services() {
             </div>
             {/* boxicon */}
             <a
-              href="https://srvinfotech.com/web-design-development"
+              href=""
               className="h4"
             >
               Digital Marketing
@@ -140,10 +131,7 @@ export default function Services() {
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{textAlign: "justify", marginTop:"5px"}}>
-                  Expand your products and services to reach the global
-                  level with the most cost-effective method. Our digital
-                  marketing service ensures the best rates of conversion of
-                  potential leads to customers.
+                Our company offers digital marketing services that can help you expand your business and reach a global audience in a cost-effective manner. Our team specializes in converting potential leads into loyal customers, ensuring a high return on investment for your marketing efforts.
                 </p>
               </div>
             </div>
@@ -167,7 +155,7 @@ export default function Services() {
             </div>
             {/* boxicon */}
             <a
-              href="https://srvinfotech.com/web-design-development"
+              href=""
               className="h4"
             >
               ERP Development
@@ -175,10 +163,7 @@ export default function Services() {
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{textAlign: "justify", marginTop:"5px"}}>
-                  The evolution of the ERP industry, which is driven by
-                  trends such as extensibility and integration, human-ERP
-                  interaction, SaaS adoption, vertical-specific
-                  standardization,
+                The development of ERP (Enterprise Resource Planning) involves designing, adapting and managing software systems that merge different business operations and procedures into a cohesive and centralized framework.
                 </p>
               </div>
             </div>
@@ -200,7 +185,7 @@ export default function Services() {
             </div>
             {/* boxicon */}
             <a
-              href="https://srvinfotech.com/web-design-development"
+              href=""
               className="h4"
             >
               Search Engine Optimisation
@@ -208,9 +193,7 @@ export default function Services() {
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{textAlign: "justify", marginTop:"5px"}}>
-                  Enhance your business on the world’s top search engines.
-                  We will help you improve the organic visibility of your
-                  business keywords and organic traffic to the website.
+                Boost your business's online presence and increase your search engine visibility. We'll assist you in optimizing your website's content to improve your organic keyword ranking and drive more traffic to your site.
                 </p>
               </div>
             </div>
