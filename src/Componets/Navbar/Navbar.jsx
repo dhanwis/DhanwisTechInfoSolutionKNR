@@ -116,9 +116,10 @@ export default function Navbar(props) {
                         location.pathname === "/" ? "active" : ""
                       }`}
                     >
-                      <Link to={"/"}>
+                      <a href="/">
+                        {" "}
                         <span>Home</span>
-                      </Link>
+                      </a>
                     </li>
                     <li
                       className={`menu-item-has-children  ${

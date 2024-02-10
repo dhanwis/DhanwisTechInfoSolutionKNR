@@ -12,7 +12,7 @@ import About from "./Pages/About";
 import AppDevelopment from "./Pages/Developments/AppDevelopment";
 import WebDevelopment from "./Pages/Developments/WebDevelopment";
 import Footer from "./Componets/Footer/Footer";
-import Careers from "./Pages/Careers";
+import ScrollToTopOnNavigation from "./scrollTopNavigate";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -49,8 +49,9 @@ function App() {
 
   return (
     <div data-aos-delay="0" data-aos-easing="ease" data-aos-duration="400">
-      <BrowserRouter>
+      <BrowserRouter >
         <Navbar scroll={scroll} />
+        <ScrollToTopOnNavigation />
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="*" element={<Soon />} />
