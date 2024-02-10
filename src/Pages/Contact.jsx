@@ -39,15 +39,13 @@ export default function Contact() {
               <div className=" ">
                 <div className="wpb_wrapper">
                   <div className="ld-fancy-heading text-uppercase ld_fancy_heading_657e0f4f83c76">
-                    <h6 className="ld-fh-element lqd-highlight-underline lqd-highlight-grow-left text-decoration-default">
+                    <h6 className="ld-fh-element lqd-highlight-underline lqd-highlight-grow-left ">
                       Locations
                     </h6>
                   </div>
+
                   <div className="ld-fancy-heading ld_fancy_heading_657e0f4f8486f">
-                    <h6 className="ld-fh-element lqd-highlight-underline lqd-highlight-grow-left text-decoration-default">
-                      <p />
-                    </h6>
-                    <h6 style={{ marginTop: "4 rem" }}>Corporate Office:</h6>{" "}
+                    <h6 className="mt-5">Corporate Office:</h6>{" "}
                     <p className="contact-descripton">
                       Dhanwis Techinfo Solutions 1st floor TKH Complex, Opp
                       Jawahar Library,Yogasala Road, Kannur, 670001
@@ -72,14 +70,14 @@ export default function Contact() {
                       </div>
                       <div className="ld-fancy-heading ld_fancy_heading_657e0f4f86839">
                         {" "}
-                        <h6 className="ld-fh-element lqd-highlight-underline lqd-highlight-grow-left text-decoration-default">
-                          {" "}
-                          <a href="mailto:info@dhanwis.com">
-                            info@dhanwis.com
-                            <br />
+                        <div>
+                          <a href="mailto:info@dhanwis.com">info@dhanwis.com</a>
+                        </div>
+                        <div>
+                          <a href="mailto:dhanwisinfo.com">
                             dhanwisinfo@gmail.com
                           </a>
-                        </h6>
+                        </div>
                       </div>
                     </div>
 
@@ -103,7 +101,7 @@ export default function Contact() {
                         {" "}
                         <h6 className="ld-fh-element lqd-highlight-underline lqd-highlight-grow-left text-decoration-default">
                           {" "}
-                          <span style={{ color: "#000080" }}>
+                          <span>
                             <a href="tel:+918086 487 219 ">
                               +91 8086 487 219 |{" "}
                             </a>

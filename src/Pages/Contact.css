@@ -1,5 +1,5 @@
 .contact-descripton {
-  margin-top: 1.4em;
+  margin-top: .4em;
   margin-bottom: 1.4em;
 }
 
@@ -73,14 +73,14 @@
 }
 
 .d-sm-block .call-us {
-  margin-top: 2em;
+  margin-top: 0.5m;
 }
 
 #contact {
   padding: 2.4rem;
 }
 
-@media  (max-width: 350px) {
+@media (max-width: 350px) {
   #contact {
     padding: 1rem;
   }

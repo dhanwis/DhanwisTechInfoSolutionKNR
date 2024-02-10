@@ -4,3 +4,11 @@
     margin-top: 3rem; /* Adjust the margin based on your design */
   }
 }
+
+.nav-link:hover {
+  color: rgb(0, 255, 42);
+}
+
+.active {
+  color: #ffcc33;
+}

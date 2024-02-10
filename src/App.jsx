@@ -43,7 +43,6 @@ function App() {
           <Route path="/software-development" element={<Softdevelopment />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
-          {/* <Route path="/comming-soon" element={<Soon />} /> */}
           <Route path="/portfolio-section" element={<Portfolio />} />
         </Routes>
         <Footer />

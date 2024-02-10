@@ -1,10 +1,16 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useLocation, Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
   const [showSide, setShowSide] = useState(false);
   const [showMobile, setShowMobile] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log(location);
+  });
 
   return (
     <>
@@ -15,25 +21,41 @@ export default function Navbar() {
         <div className="xb-header__top p-2">
           <div className="container m-auto ul_li_between">
             <div className="xb-social ul_li">
-              <span>Follow us :</span>
+              <span>Follow us : </span>
               <ul className="ul_li">
                 <li>
-                  <a href="https://www.instagram.com/dhanwistechinfosolutions/">
+                  <a
+                    href="https://www.instagram.com/dhanwistechinfosolutions/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fab fa-instagram" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/dhanwisinfo">
+                  <a
+                    href="https://www.facebook.com/dhanwisinfo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fab fa-facebook-f" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://in.linkedin.com/in/dhanwis-techinfo-solutions-9505622a7">
+                  <a
+                    href="https://in.linkedin.com/in/dhanwis-techinfo-solutions-9505622a7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fab fa-linkedin-in" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://api.whatsapp.com/send?phone=8086487219">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=8086487219"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i class="fa-brands fa-whatsapp"></i>
                   </a>
                 </li>
@@ -59,7 +81,7 @@ export default function Navbar() {
             <div className="ul_li_between">
               {/* xb-header__logo */}
               <div className="">
-                <NavLink to={"/"}>
+                <Link to={"/"}>
                   {" "}
                   {/* <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2> */}
                   <img
@@ -68,105 +90,140 @@ export default function Navbar() {
                     className="img-fluid"
                     width={111}
                   />
-                </NavLink>
+                </Link>
               </div>
-              <div className="main-menu__wrap ul_li navbar navbar-expand-lg">
+              <div className=" navbar navbar-expand-lg">
                 <nav className="main-menu collapse navbar-collapse">
                   <ul>
-                    <li className="menu-item-has-children">
-                      <NavLink
-                        to={"/"}
-                        className={`nav-link ${
-                          location.pathname === "/" ? "active" : ""
-                        }`}
-                      >
-                        {" "}
+                    <li
+                      className={`menu-item-has-children  ${
+                        location.pathname === "/" ? "active" : ""
+                      }`}
+                    >
+                      <Link to={"/"}>
                         <span>Home</span>
-                      </NavLink>
+                      </Link>
                     </li>
-                    <li className="menu-item-has-children">
-                      <NavLink
-                        to={"/about"}
-                        className={`nav-link ${
-                          location.pathname === "/about" ? "active" : ""
-                        }`}
-                      >
+                    <li
+                      className={`menu-item-has-children  ${
+                        location.pathname === "/about" ? "active" : ""
+                      }`}
+                    >
+                      <Link to={"/about"}>
                         <span>About us</span>
-                      </NavLink>
+                      </Link>
                     </li>
-                    <li className="menu-item-has-children">
-                      <NavLink
-                        to={"/portfolio-section"}
-                        className={`nav-link ${
-                          location.pathname === "/portfolio-section"
-                            ? "active"
-                            : ""
-                        }`}
-                      >
+                    <li
+                      className={`menu-item-has-children  ${
+                        location.pathname === "/portfolio-section"
+                          ? "active"
+                          : ""
+                      }`}
+                    >
+                      <Link to={"/portfolio-section"}>
                         <span>Portfolio</span>
-                      </NavLink>
+                      </Link>
                     </li>
-                    <li className="menu-item-has-children">
-                      <a
-                        href="#services"
-                        className={`nav-link ${
-                          location.pathname === "#services" ? "active" : ""
-                        }`}
-                      >
+                    <li
+                      className={`menu-item-has-children  ${
+                        location.pathname === "/appDevelopment" ? "active" : ""
+                      } ${
+                        location.pathname === "/software-development"
+                          ? "active"
+                          : ""
+                      } ${
+                        location.pathname === "/webDevelopment" ? "active" : ""
+                      } ${
+                        location.pathname === "/digital-marketing"
+                          ? "active"
+                          : ""
+                      } ${
+                        location.pathname === "/erp-development" ? "active" : ""
+                      }`}
+                    >
+                      <a href="#services">
                         <span>Services</span>
                       </a>
                       <ul className="submenu">
-                        <li>
-                          <NavLink to={"/appDevelopment"}>
+                        <li
+                          className={`menu-item-has-children  ${
+                            location.pathname === "/appDevelopment"
+                              ? "active"
+                              : ""
+                          }`}
+                        >
+                          <Link to={"/appDevelopment"}>
                             <span>Mobile App Development</span>
-                          </NavLink>
+                          </Link>
                         </li>
-                        <li>
+                        <li
+                          className={`menu-item-has-children  ${
+                            location.pathname === "/software-development"
+                              ? "active"
+                              : ""
+                          }`}
+                        >
                           {" "}
-                          <NavLink to={"/software-development"}>
+                          <Link to={"/software-development"}>
                             <span>Software Development</span>
-                          </NavLink>{" "}
+                          </Link>{" "}
                         </li>
-                        <li>
-                          <NavLink to={"/digital-marketing"}>
+                        <li
+                          className={`menu-item-has-children  ${
+                            location.pathname === "/digital-marketing"
+                              ? "active"
+                              : ""
+                          }`}
+                        >
+                          <Link to={"/digital-marketing"}>
                             <span>Digital Marketing</span>
-                          </NavLink>{" "}
+                          </Link>{" "}
                         </li>
 
-                        <li>
-                          <NavLink to={"/erp-developement"}>
+                        <li
+                          className={`menu-item-has-children  ${
+                            location.pathname === "/erp-developement"
+                              ? "active"
+                              : ""
+                          }`}
+                        >
+                          <Link to={"/erp-developement"}>
                             <span>Erp Development</span>
-                          </NavLink>{" "}
+                          </Link>{" "}
                         </li>
-                        <li>
+                        <li
+                          className={`menu-item-has-children  ${
+                            location.pathname === "/webDevelopment"
+                              ? "active"
+                              : ""
+                          }`}
+                        >
                           {" "}
-                          <NavLink to={"/webDevelopment"}>
+                          <Link to={"/webDevelopment"}>
                             <span>Web Design &amp; Development</span>
-                          </NavLink>{" "}
+                          </Link>{" "}
                         </li>
                         {/* <li><a href="checkout.html"><span>ERP Development</span></a></li> */}
                       </ul>
                     </li>
-                    <li>
-                      <NavLink
-                        to={"/careers"}
-                        className={`nav-link ${
-                          location.pathname === "/careers" ? "active" : ""
-                        }`}
-                      >
+                    <li
+                      className={`menu-item-has-children  ${
+                        location.pathname === "/careers" ? "active" : ""
+                      }`}
+                    >
+                      <Link to={"/careers"}>
                         <span>Careers</span>
-                      </NavLink>
+                      </Link>
                     </li>
 
-                    <li className="menu-item-has-children">
-                      <NavLink
-                        to={"/contact"}
-                        className={`nav-link ${
-                          location.pathname === "/contact" ? "active" : ""
-                        }`}
-                      >
+                    <li
+                      className={`menu-item-has-children  ${
+                        location.pathname === "/contact" ? "active" : ""
+                      }`}
+                    >
+                      <Link to={"/contact"}>
                         <span>Contact</span>
-                      </NavLink>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
@@ -181,29 +238,29 @@ export default function Navbar() {
                         onClick={() => setShowMobile(false)}
                       />
                       <div className="xb-logo-mobile xb-hide-xl">
-                        <NavLink to={"/"}>
+                        <Link to={"/"}>
                           {" "}
                           <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2>
                           <small className="text-muted">TechInfoSolution</small>
-                        </NavLink>
+                        </Link>
                       </div>
                       <nav className="xb-header-nav">
                         <ul className="xb-menu-primary clearfix">
                           <li className="menu-item-has-children active">
-                            <NavLink to={"/"}>
+                            <Link to={"/"}>
                               {" "}
                               <span>Home</span>
-                            </NavLink>
+                            </Link>
                           </li>
                           <li className="menu-item-has-children">
-                            <NavLink to={"/about"}>
+                            <Link to={"/about"}>
                               <span>About us</span>
-                            </NavLink>
+                            </Link>
                           </li>
                           <li className="menu-item-has-children">
-                            <NavLink to={"/portfolio-section"}>
+                            <Link to={"/portfolio-section"}>
                               <span>Portfolio</span>
-                            </NavLink>
+                            </Link>
                           </li>
                           <li className="menu-item-has-children">
                             <a href="#services">
@@ -211,9 +268,9 @@ export default function Navbar() {
                             </a>
                             <ul className="submenu">
                               <li>
-                                <NavLink to={"/appDevelopment"}>
+                                <Link to={"/appDevelopment"}>
                                   <span>Mobile App Development</span>
-                                </NavLink>
+                                </Link>
                               </li>
                               {/* <li>
                                 {" "}
@@ -222,15 +279,15 @@ export default function Navbar() {
                                 </NavLink>{" "}
                               </li> */}
                               <li>
-                                <NavLink to={"/digital-marketing"}>
+                                <Link to={"/digital-marketing"}>
                                   <span>Digital Marketing</span>
-                                </NavLink>{" "}
+                                </Link>{" "}
                               </li>
                               <li>
                                 {" "}
-                                <NavLink to={"/webDevelopment"}>
+                                <Link to={"/webDevelopment"}>
                                   <span>Web Design &amp; Development</span>
-                                </NavLink>{" "}
+                                </Link>{" "}
                               </li>
                               {/* <li><a href="checkout.html"><span>ERP Development</span></a></li> */}
                             </ul>
@@ -242,9 +299,9 @@ export default function Navbar() {
                           </li>
 
                           <li className="menu-item-has-children">
-                            <NavLink to={"/contact"}>
+                            <Link to={"/contact"}>
                               <span>Contact</span>
-                            </NavLink>
+                            </Link>
                           </li>
                         </ul>
                       </nav>
@@ -258,7 +315,6 @@ export default function Navbar() {
                 <div className="d-none d-lg-block">
                   <a
                     className="xb-header-bar offcanvas-sidebar-btn ml-30"
-                    //href="javascript:void(0);"
                     onClick={() => setShowSide(!showSide)} // side view btn;
                   >
                     <div className="xb-header-bar__icon">
@@ -272,7 +328,6 @@ export default function Navbar() {
                 <div className="header-bar d-lg-none">
                   <a
                     className="xb-header-bar xb-nav-mobile ml-30"
-                    // href="javascript:void(0);"
                     onClick={() => setShowMobile(!showMobile)} // mobile view btn;
                   >
                     <div className="xb-header-bar__icon">
@@ -298,10 +353,10 @@ export default function Navbar() {
             <div>
               <a className="navbar-brand" href="#">
                 <div className="d-flex">
-                  <NavLink to={"/"}>
+                  <Link to={"/"}>
                     {" "}
                     <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2>
-                  </NavLink>
+                  </Link>
                 </div>
               </a>
             </div>
