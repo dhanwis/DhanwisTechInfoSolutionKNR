@@ -12,3 +12,57 @@
 .active {
   color: #ffcc33;
 }
+
+/* .nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  background-image: url("/mr_hero_bg.jpg");
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+} */
+
+.fixed-top {
+  background-image: url("/mr_hero_bg.jpg"); /* Initial background image */
+  transition: background-image 0.4s ease-in-out; /* Transition for background image property */
+}
+
+@media screen and (max-width: 768px) {
+  .fixed-top {
+    display: none;
+  }
+}
+
+/* .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("/mr_hero_bg.jpg");
+  color: #fff;
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+  padding: 20px;
+  z-index: 1000;  
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ */

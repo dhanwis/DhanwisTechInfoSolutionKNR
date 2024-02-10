@@ -71,11 +71,23 @@ export default function Contact() {
                       <div className="ld-fancy-heading ld_fancy_heading_657e0f4f86839">
                         {" "}
                         <div>
-                          <a href="mailto:info@dhanwis.com">info@dhanwis.com</a>
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="mailto:info@dhanwis.com"
+                            style={{ color: "#ffcc33" }}
+                          >
+                            info@dhanwis.com
+                          </a>
                         </div>
                         <div>
-                          <a href="mailto:dhanwisinfo.com">
-                            dhanwisinfo@gmail.com
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="mailto:dhanwistechinfosolutions.com"
+                            style={{ color: "#ffcc33" }}
+                          >
+                            dhanwistechinfosolutions@gmail.com
                           </a>
                         </div>
                       </div>
@@ -102,10 +114,34 @@ export default function Contact() {
                         <h6 className="ld-fh-element lqd-highlight-underline lqd-highlight-grow-left text-decoration-default">
                           {" "}
                           <span>
-                            <a href="tel:+918086 487 219 ">
+                            <a
+                              target="_blank"
+                              rel="noreferrer"
+                              href="tel:+918086 487 219"
+                              style={{ color: "#ffcc33" }}
+                            >
                               +91 8086 487 219 |{" "}
                             </a>
-                            <a href="tel:+96566011953">+9961 487 219</a>
+                            <a
+                              target="_blank"
+                              rel="noreferrer"
+                              href="tel:+9961 487 219"
+                              style={{ color: "#ffcc33" }}
+                            >
+                              +9961 487 219
+                            </a>
+
+                            <div>
+                              {" "}
+                              <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="tel:+9946 487 219"
+                                style={{ color: "#ffcc33", marginTop: "4px" }}
+                              >
+                                +9946 487 219
+                              </a>
+                            </div>
                           </span>
                         </h6>
                       </div>

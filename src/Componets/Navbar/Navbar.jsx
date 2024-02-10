@@ -1,22 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [showSide, setShowSide] = useState(false);
   const [showMobile, setShowMobile] = useState(false);
 
   const location = useLocation();
 
-  useEffect(() => {
-    console.log(location);
-  });
-
   return (
     <>
       <header
         id="xb-header-area"
-        className="site-header header-marketing is-sticky"
+        className={`site-header header-marketing is-sticky `}
       >
         <div className="xb-header__top p-2">
           <div className="container m-auto ul_li_between">
@@ -61,6 +57,25 @@ export default function Navbar() {
                 </li>
               </ul>
             </div>
+            <div className="me-5">
+              <span>
+                <i
+                  class="fa-solid fa-phone me-2"
+                  style={{ color: "whitesmoke" }}
+                ></i>
+                <a href="tel:+96566011953 me-1" style={{ color: "#ffcc33" }}>
+                  +91 9946 487 219{" "}
+                </a>
+                |
+                <a href="tel:+8086487219 me-3" style={{ color: "#ffcc33" }}>
+                  +91 8086487219{" "}
+                </a>
+              </span>
+
+              <div>
+                <span></span>
+              </div>
+            </div>
 
             {/* <div className="xb-header__language pl-70">
               <div className="">
@@ -76,14 +91,15 @@ export default function Navbar() {
           </div>
         </div>
         {/* xb-header__wrap xb-header-has-arrow xb-header */}
-        <div className="">
+        <div>
           <div className="container">
-            <div className="ul_li_between">
+            <div
+              className={`ul_li_between  ${props.scroll ? "fixed-top" : ""}`}
+            >
               {/* xb-header__logo */}
               <div className="">
                 <Link to={"/"}>
                   {" "}
-                  {/* <h2 style={{ color: "#ffcc33" }}>Dhanwis</h2> */}
                   <img
                     src="/img/logo/dhanwis-logo/Dhanwis Logo-01.png"
                     alt=""
@@ -92,9 +108,9 @@ export default function Navbar() {
                   />
                 </Link>
               </div>
-              <div className=" navbar navbar-expand-lg">
-                <nav className="main-menu collapse navbar-collapse">
-                  <ul>
+              <div className={`navbar navbar-expand-lg `}>
+                <nav className="main-menu collapse navbar-collapse  ">
+                  <ul className="mx-auto ">
                     <li
                       className={`menu-item-has-children  ${
                         location.pathname === "/" ? "active" : ""
@@ -227,7 +243,6 @@ export default function Navbar() {
                     </li>
                   </ul>
                 </nav>
-
                 <div className="xb-header-wrap style-black">
                   <div
                     className={`xb-header-menu ${showMobile ? "active" : ""}`}
@@ -383,7 +398,7 @@ export default function Navbar() {
             </li>
 
             <li>
-              <a href="#!">
+              <a href="tell:+91 8086 487 219" target="_blank" rel="noreferrer">
                 <span>
                   <img src="/img/icon/star-2.svg" alt="" />
                 </span>
@@ -391,7 +406,7 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#!">
+              <a href="tell:+91 9961 487 219" target="_blank" rel="noreferrer">
                 <span>
                   <img src="/img/icon/star-2.svg" alt="" />
                 </span>
@@ -400,7 +415,7 @@ export default function Navbar() {
             </li>
 
             <li>
-              <a href="#!">
+              <a href="tel:+91 9946 487 219" target="_blank" rel="noreferrer">
                 <span>
                   <img src="/img/icon/star-2.svg" alt="" />
                 </span>
@@ -408,11 +423,15 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#!">
+              <a
+                href="mailto:info@dhanwis.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span>
                   <img src="/img/icon/star-2.svg" alt="" />
                 </span>
-                dhanwistechinfosolutions@gmail.com
+                info@dhanwis.com
               </a>
             </li>
           </ul>

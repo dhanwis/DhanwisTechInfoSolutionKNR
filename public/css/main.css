@@ -3272,7 +3272,12 @@ body[data-aos-easing="ease"] [data-aos] {
 /*  02. header
 /*----------------------------------------*/
 .site-header {
-  position: relative;
+  /* position: relative;
+  z-index: 3; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 3;
 }
 
@@ -3283,6 +3288,7 @@ body[data-aos-easing="ease"] [data-aos] {
 }
 
 .header-default {
+  
   background-color: var(--color-white);
 }
 .header-default .xb-header-area-sticky {

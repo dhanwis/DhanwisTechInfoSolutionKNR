@@ -24,14 +24,33 @@ import ErpDevelopment from "./Pages/Erpdevelopment/ErpDevelopment";
 import Softdevelopment from "./Pages/Soft/Softdevelopment";
 
 function App() {
+  const [scroll, setIsScrolled] = useState(false);
+
   useEffect(() => {
     AOS.init();
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition >= 195) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <div data-aos-delay="0" data-aos-easing="ease" data-aos-duration="400">
       <BrowserRouter>
-        <Navbar />
+        <Navbar scroll={scroll} />
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="*" element={<Soon />} />
@@ -42,7 +61,7 @@ function App() {
           <Route path="/erp-developement" element={<ErpDevelopment />} />
           <Route path="/software-development" element={<Softdevelopment />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/careers" element={<Careers />} />
+          <Route path="/careers" element={<Soon />} />
           <Route path="/portfolio-section" element={<Portfolio />} />
         </Routes>
         <Footer />
