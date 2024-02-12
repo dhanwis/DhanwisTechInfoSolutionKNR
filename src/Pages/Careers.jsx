@@ -1,9 +1,9 @@
-import React from "react";
+import "./Careers.css";
 
 export default function Careers() {
   return (
     <div>
-      <section className="min-vh-50 d-flex">
+      <section className="career-section d-flex">
         <div className="container align-self-center text-white text-center">
           <h1
             className="mt-5 mb-4 animated fadeInUp visible"

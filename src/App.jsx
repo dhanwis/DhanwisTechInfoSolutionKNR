@@ -22,6 +22,9 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 import DigitalMarketing from "./Pages/Digital/Newdigital";
 import ErpDevelopment from "./Pages/Erpdevelopment/ErpDevelopment";
 import Softdevelopment from "./Pages/Soft/Softdevelopment";
+import ErrorPage from "./Pages/ErrorPage";
+import PreventNavigationBtn from "./Pages/PreventNavigationBtn";
+import Careers from "./Pages/Careers";
 
 function App() {
   const [scroll, setIsScrolled] = useState(false);
@@ -48,13 +51,14 @@ function App() {
   }, []);
 
   return (
-    <div data-aos-delay="0" data-aos-easing="ease" data-aos-duration="400">
-      <BrowserRouter >
+    <div data-aos-delay="0" data-aos-easing="ease" data-aos-duration="400" className="overflow-auto">
+      <BrowserRouter>
         <Navbar scroll={scroll} />
+        <PreventNavigationBtn />
         <ScrollToTopOnNavigation />
         <Routes>
           <Route path="/" Component={Home} />
-          <Route path="*" element={<Soon />} />
+          <Route path="*" element={<ErrorPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/appDevelopment" element={<AppDevelopment />} />
           <Route path="/webDevelopment" element={<WebDevelopment />} />
@@ -62,7 +66,7 @@ function App() {
           <Route path="/erp-developement" element={<ErpDevelopment />} />
           <Route path="/software-development" element={<Softdevelopment />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/careers" element={<Soon />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/portfolio-section" element={<Portfolio />} />
         </Routes>
         <Footer />

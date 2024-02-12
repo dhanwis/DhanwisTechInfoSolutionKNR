@@ -1,0 +1,9 @@
+.career-section {
+  min-height: 50vh;
+}
+
+@media (max-width: 767px) {
+  .career-section {
+    min-height: 100vh;
+  }
+}

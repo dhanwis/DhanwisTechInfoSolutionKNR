@@ -309,9 +309,9 @@ export default function Navbar(props) {
                             </ul>
                           </li>
                           <li>
-                            <a href="/careers">
+                          <Link to={"/careers"}>
                               <span>Careers</span>
-                            </a>
+                            </Link>
                           </li>
 
                           <li className="menu-item-has-children">

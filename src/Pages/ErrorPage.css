@@ -1,0 +1,49 @@
+.terminal {
+  display: flex;
+}
+
+.terminal {
+  min-height: 50vh;
+}
+
+@media (max-width: 767px) {
+  .terminal {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-primary {
+    margin-top: 10px;
+  }
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.error-page h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.error-page p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .error-page h1 {
+    font-size: 2.5rem;
+  }
+
+  .error-page p {
+    font-size: 1rem;
+  }
+}
