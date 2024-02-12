@@ -1,5 +1,5 @@
 import "./services.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Services() {
   return (
@@ -22,9 +22,10 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="/webDevelopment" className="h4">
-              Web Design &amp; Development
-            </a>
+
+            <Link to={"/webDevelopment"}>
+              <span className="h4">Web Design &amp; Development</span>
+            </Link>
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{ textAlign: "justify", marginTop: "5px" }}>
@@ -54,9 +55,10 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="/software-development" className="h4">
-              Software Development
-            </a>
+
+            <Link to={"/software-development"}>
+              <span className="h4">Software Development</span>
+            </Link>
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{ textAlign: "justify", marginTop: "5px" }}>
@@ -86,9 +88,10 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="/appDevelopment" className="h4">
-              Mobile App Development
-            </a>
+
+            <Link to={"/appDevelopment"}>
+              <span className="h4">Mobile App Development</span>
+            </Link>
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{ textAlign: "justify", marginTop: "5px" }}>
@@ -117,9 +120,10 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="/digital-marketing" className="h4">
-              Digital Marketing
-            </a>
+
+            <Link to={"/digital-marketing"}>
+              <span className="h4">Digital Marketing</span>
+            </Link>
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{ textAlign: "justify", marginTop: "5px" }}>
@@ -149,9 +153,10 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="/erp-developement" className="h4">
-              ERP Development
-            </a>
+
+            <Link to={"/erp-developement"}>
+              <span className="h4">ERP Development</span>
+            </Link>
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{ textAlign: "justify", marginTop: "5px" }}>
@@ -179,9 +184,10 @@ export default function Services() {
               </span>
             </div>
             {/* boxicon */}
-            <a href="/digital-marketing" className="h4">
-              Search Engine Optimisation
-            </a>
+
+            <Link to={"/digital-marketing"}>
+              <span className="h4"> Search Engine Optimisation</span>
+            </Link>
             <div className="boxcont">
               <div className="boxdesc">
                 <p style={{ textAlign: "justify", marginTop: "5px" }}>
@@ -198,11 +204,11 @@ export default function Services() {
         </div>
 
         <div className="col-12 btngroup mt-4">
-          <NavLink to={"/comming-soon"}>
+          <NavLink to={"/about"}>
             <button className="btn btn-outline-warning">Explore More</button>
           </NavLink>
 
-          <NavLink to={"/comming-soon"}>
+          <NavLink to={"/contact"}>
             <button className="btn btn-warning">Get a Quote</button>
           </NavLink>
         </div>

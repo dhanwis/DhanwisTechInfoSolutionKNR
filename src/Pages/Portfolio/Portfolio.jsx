@@ -1,6 +1,5 @@
 import "./Portfolio.css";
 
-
 export default function Portfolio() {
   return (
     <div className="">
@@ -15,10 +14,9 @@ export default function Portfolio() {
       >
         <h1 style={{ letterSpacing: "2px" }}>Beautiful Touch by Dhanwis</h1>
       </header>
-
-      <section class="portfolio">
+      <section className="portfolio">
         <div
-          class="project"
+          className="project"
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="500"
@@ -29,10 +27,16 @@ export default function Portfolio() {
           />
           <h2>Exora Conventions</h2>
           <p>
-          Exora Conventions-an extra ordinary convention centre in 
-          Kannur is a new entrant in Kannur &apos; s social arena.
+            Exora Conventions-an extra ordinary convention centre in Kannur is a
+            new entrant in Kannur &apos; s social arena.
           </p>
-          <a href="http://exoraconventions.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a
+            href="http://exoraconventions.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
         </div>
 
         <div
@@ -47,10 +51,17 @@ export default function Portfolio() {
           />
           <h2>Travel & Tourisom</h2>
           <p>
-          azygo Travels is synonymous with an undoubted assurance and
-          absolute ease to travel.
+            azygo Travels is synonymous with an undoubted assurance and absolute
+            ease to travel.
           </p>
-          <a style={{marginTop:"1.2rem"}} href="http://www.eazygotravels.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a
+            style={{ marginTop: "1.2rem" }}
+            href="http://www.eazygotravels.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
         </div>
 
         <div
@@ -65,12 +76,18 @@ export default function Portfolio() {
           />
           <h2>Interior Design</h2>
           <p>
-          Goldman Interiors take pride in creating interior solutions that resonate with sophistication.
+            Goldman Interiors take pride in creating interior solutions that
+            resonate with sophistication.
           </p>
-          <a href="https://goldmaninteriors.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a
+            href="https://goldmaninteriors.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
         </div>
       </section>
-
       <section
         class="portfolio"
         data-aos="fade-down"
@@ -84,9 +101,17 @@ export default function Portfolio() {
           />
           <h2>Ashraya Medicals</h2>
           <p>
-           Ashraya Medicals has always been and has continued to be the best choice for all your pharmacy needs.
+            Ashraya Medicals has always been and has continued to be the best
+            choice for all your pharmacy needs.
           </p>
-          <a style={{marginTop:"3.5rem"}} href="http://ashrayamedicals.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a
+            style={{ marginTop: "3.5rem" }}
+            href="http://ashrayamedicals.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
         </div>
 
         <div
@@ -100,10 +125,20 @@ export default function Portfolio() {
             alt="Project 2"
           />
           <h2>Interior Works</h2>
-          <p> We are a team of Engineers and highly experienced professionals worked in India and abroad in the 
-            field of interior and utility services design.
+          <p>
+            {" "}
+            We are a team of Engineers and highly experienced professionals
+            worked in India and abroad in the field of interior and utility
+            services design.
           </p>
-          <a style={{marginTop:"2.1rem"}} href="http://lealinterior.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a
+            style={{ marginTop: "2.1rem" }}
+            href="http://lealinterior.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
         </div>
 
         <div
@@ -119,12 +154,19 @@ export default function Portfolio() {
           <h2>Hospitality Service</h2>
           <p>
             Nizamia Is One Of The Pioneer Industry Based In Qatar, Which
-            Provides Hospitality Services, Cleaning Services,  Manpower Consultation.{" "}
+            Provides Hospitality Services, Cleaning Services, Manpower
+            Consultation.{" "}
           </p>
-          <a style={{marginTop:"2.1rem"}}href="http://nizamia.qa/" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a
+            style={{ marginTop: "2.1rem" }}
+            href="http://nizamia.qa/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
         </div>
       </section>
-
       <section
         class="portfolio"
         data-aos="fade-down"
@@ -138,9 +180,17 @@ export default function Portfolio() {
           />
           <h2>Challenge Group</h2>
           <p>
-          Challenge Group is a regional, full-service real estate development and management company. Our objective is to be a profitable leader in commercial, retail and residential real estate.  
+            Challenge Group is a regional, full-service real estate development
+            and management company. Our objective is to be a profitable leader
+            in commercial, retail and residential real estate.
           </p>
-          <a href="https://challengegroup-qatar.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a
+            href="https://challengegroup-qatar.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
         </div>
 
         <div
@@ -160,7 +210,14 @@ export default function Portfolio() {
             houseboat cruises through the Valiyaparamba Backwaters in Nileshwar
             North Kerala.
           </p>
-          <a style={{marginTop:"2.5rem"}} href="http://falconcruise.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a
+            style={{ marginTop: "2.5rem" }}
+            href="http://falconcruise.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
         </div>
 
         <div
@@ -174,8 +231,19 @@ export default function Portfolio() {
             alt="Project 3"
           />
           <h2>Cinema News Agency </h2>
-          <p>Cinema News Agency is an online platform dedicated to providing news, updates, and information related to the film and entertainment industry. </p>
-          <a style={{marginTop:"2.3rem"}} href="http://cinemanewsagency.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+          <p>
+            Cinema News Agency is an online platform dedicated to providing
+            news, updates, and information related to the film and entertainment
+            industry.{" "}
+          </p>
+          <a
+            style={{ marginTop: "2.3rem" }}
+            href="http://cinemanewsagency.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
         </div>
       </section>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import ChatbotAI from "../Chatbot/ChatbotAI";
+import "./Banner.css";
 
 export default function Banner() {
   return (
@@ -40,11 +41,11 @@ export default function Banner() {
                   data-aos="fade-up"
                   data-aos-duration="500"
                   data-aos-delay="400"
-                  
                 >
-                 Our all-inclusive range of digital solutions includes web development,  <br />{" "} mobile app development, and digital marketing, guaranteeing a comprehensive approach to fulfill your company requirements.  
-                  
-                 
+                  Our all-inclusive range of digital solutions includes web
+                  development, <br /> mobile app development, and digital
+                  marketing, guaranteeing a comprehensive approach to fulfill
+                  your company requirements.
                 </p>
                 <div
                   class="xb-item--btn"
@@ -52,7 +53,7 @@ export default function Banner() {
                   data-aos-duration="500"
                   data-aos-delay="600"
                 >
-                  <a class="xb-btn xb-btn--marketing" href="about.html">
+                  <a class="xb-btn xb-btn--marketing" href="#services">
                     <div class="btn-anim-wrap">
                       <span class="button-text">let’s get started</span>
                       <span class="button-text">let’s get started</span>
@@ -98,10 +99,12 @@ export default function Banner() {
                       alt=""
                     />
                   </div>
-                  <div class="chart chart--4" data-aos="zoom-in"
+                  <div
+                    class="chart chart--4"
+                    data-aos="zoom-in"
                     data-aos-duration="600"
-                    data-aos-delay="800">
-
+                    data-aos-delay="800"
+                  >
                     {/* <ChatbotAI /> */}
                   </div>
                 </div>

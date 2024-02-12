@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar(props) {
+  const location = useLocation();
   const [showSide, setShowSide] = useState(false);
   const [showMobile, setShowMobile] = useState(false);
 
-  const location = useLocation();
+  useEffect(() => {
+    setShowMobile(false);
+    setShowSide(false);
+  }, [location.pathname]);
 
   return (
     <>
@@ -309,7 +313,7 @@ export default function Navbar(props) {
                             </ul>
                           </li>
                           <li>
-                          <Link to={"/careers"}>
+                            <Link to={"/careers"}>
                               <span>Careers</span>
                             </Link>
                           </li>
