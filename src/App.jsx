@@ -52,7 +52,12 @@ function App() {
   }, []);
 
   return (
-    <div data-aos-delay="0" data-aos-easing="ease" data-aos-duration="400">
+    <div
+      data-aos-delay="0"
+      data-aos-easing="ease"
+      data-aos-duration="400"
+      //className="overflow-hidden"
+    >
       <BrowserRouter>
         <Navbar scroll={scroll} />
         <PreventNavigationBtn />

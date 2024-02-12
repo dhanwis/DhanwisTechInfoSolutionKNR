@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   background-image: url("/mr_hero_bg.jpg");
 }
 
