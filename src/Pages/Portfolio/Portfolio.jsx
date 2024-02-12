@@ -24,6 +24,7 @@ export default function Portfolio() {
           <img
             src="img/portfolio/Exora Conventions and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_03_28.png"
             alt="Project 1"
+            loading="eager"
           />
           <h2>Exora Conventions</h2>
           <p>
@@ -48,6 +49,7 @@ export default function Portfolio() {
           <img
             src="img\portfolio\Exora Conventions and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_07_15.png"
             alt="Project 2"
+            loading="eager"
           />
           <h2>Travel & Tourisom</h2>
           <p>
@@ -73,6 +75,7 @@ export default function Portfolio() {
           <img
             src="img/portfolio/Exora Conventions and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_08_35.png"
             alt="Project 3"
+            loading="eager"
           />
           <h2>Interior Design</h2>
           <p>
@@ -98,6 +101,7 @@ export default function Portfolio() {
           <img
             src="img/portfolio/Exora Conventions and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_08_24.png"
             alt="Project 1"
+            loading="eager"
           />
           <h2>Ashraya Medicals</h2>
           <p>
@@ -123,6 +127,7 @@ export default function Portfolio() {
           <img
             src="img/portfolio/Exora Conventions and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_08_04.png"
             alt="Project 2"
+            loading="eager"
           />
           <h2>Interior Works</h2>
           <p>
@@ -150,6 +155,7 @@ export default function Portfolio() {
           <img
             src="img/portfolio/Exora Conventions and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_07_47.png"
             alt="Project 3"
+            loading="eager"
           />
           <h2>Hospitality Service</h2>
           <p>
@@ -177,6 +183,7 @@ export default function Portfolio() {
           <img
             src="img/portfolio/Exora Conventions and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_07_27.png"
             alt="Project 1"
+            loading="eager"
           />
           <h2>Challenge Group</h2>
           <p>
@@ -202,6 +209,7 @@ export default function Portfolio() {
           <img
             src="img/portfolio/Exora Conventions and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_07_03.png"
             alt="Project 2"
+            loading="eager"
           />
           <h2>Falcon Cruise</h2>
           <p>
@@ -229,6 +237,7 @@ export default function Portfolio() {
           <img
             src="img/portfolio/Cinema News Agency _ Exclusive Cinema Magazine in Malayalam and 14 more pages - Profile 1 - Microsoft​ Edge 11-01-2024 09_38_24.png"
             alt="Project 3"
+            loading="eager"
           />
           <h2>Cinema News Agency </h2>
           <p>

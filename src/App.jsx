@@ -57,7 +57,7 @@ function App() {
       data-aos-delay="0"
       data-aos-easing="ease"
       data-aos-duration="400"
-      className="overflow-auto"
+      className="overflow-x-hidden"
     >
       <BrowserRouter>
         <Navbar scroll={scroll} />
