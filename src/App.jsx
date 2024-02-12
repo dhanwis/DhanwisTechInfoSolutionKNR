@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "react-chatbot-kit/build/main.css";
 
-
 import PreventNavigationBtn from "./Pages/PreventNavigationBtn";
 import ScrollToTopOnNavigation from "./scrollTopNavigate";
 
@@ -53,12 +52,7 @@ function App() {
   }, []);
 
   return (
-    <div
-      data-aos-delay="0"
-      data-aos-easing="ease"
-      data-aos-duration="400"
-      className="overflow-x-hidden"
-    >
+    <div data-aos-delay="0" data-aos-easing="ease" data-aos-duration="400">
       <BrowserRouter>
         <Navbar scroll={scroll} />
         <PreventNavigationBtn />

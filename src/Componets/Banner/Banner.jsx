@@ -1,6 +1,5 @@
 import React from "react";
 import ChatbotAI from "../Chatbot/ChatbotAI";
-import "./Banner.css";
 
 export default function Banner() {
   return (
