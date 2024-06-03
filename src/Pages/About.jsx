@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./About.css";
 
 export default function About() {
-  return (
+    return (
     <>
       <section>
         <div className="container">
@@ -34,7 +34,7 @@ export default function About() {
                   </h2>
                   <p
                     style={{ textAlign: "justify" }}
-                    className="description mt-3"
+                    className={`description mt-3`}
                   >
                     For over a decade, the world has dramatically changed its
                     course using IT technologies.Dhanwis understand the
@@ -61,10 +61,8 @@ export default function About() {
                     src="img/web.jpeg"
                     width={"500"}
                     alt="img"
-                    className="img-fluid mt-10"
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-delay="200"
+                    className={`img-fluid mt-10`}
+                     
                   />
                 </div>
               </div>

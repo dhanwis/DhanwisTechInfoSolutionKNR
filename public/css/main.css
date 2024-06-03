@@ -3141,11 +3141,11 @@ h6 {
 [data-aos="fade-down-left"] {
   transform: translate(50px, -50px);
 }
-
+/* 
 [data-aos][data-aos][data-aos-easing="ease"],
 body[data-aos-easing="ease"] [data-aos] {
   transition-timing-function: cubic-bezier(0.18, 0.57, 0.25, 0.97);
-}
+} */
 
 @-webkit-keyframes xb-danceTop {
   16% {

@@ -28,6 +28,7 @@ export default function Navbar(props) {
                     href="https://www.instagram.com/dhanwistechinfosolutions/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Instagram"
                   >
                     <i className="fab fa-instagram" />
                   </a>
@@ -35,6 +36,7 @@ export default function Navbar(props) {
                 <li>
                   <a
                     href="https://www.facebook.com/dhanwisinfo"
+                    aria-label="Facebook"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -46,6 +48,7 @@ export default function Navbar(props) {
                     href="https://in.linkedin.com/in/dhanwis-techinfo-solutions-9505622a7"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="LinkedIn"
                   >
                     <i className="fab fa-linkedin-in" />
                   </a>
@@ -55,6 +58,7 @@ export default function Navbar(props) {
                     href="https://api.whatsapp.com/send?phone=8086487219"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Whatsapp"
                   >
                     <i class="fa-brands fa-whatsapp"></i>
                   </a>
@@ -107,8 +111,7 @@ export default function Navbar(props) {
                   <img
                     src="/img/logo/dhanwis-logo/Dhanwis Logo-01.png"
                     alt=""
-                    className="img-fluid"
-                    width={111}
+                    className="img-fluid logoImg"
                   />
                 </Link>
               </div>
@@ -116,9 +119,8 @@ export default function Navbar(props) {
                 <nav className="main-menu collapse navbar-collapse  ">
                   <ul className="mx-auto ">
                     <li
-                      className={`menu-item-has-children  ${
-                        location.pathname === "/" ? "active" : ""
-                      }`}
+                      className={`menu-item-has-children  ${location.pathname === "/" ? "active" : ""
+                        }`}
                     >
                       <a href="/">
                         {" "}
@@ -126,63 +128,54 @@ export default function Navbar(props) {
                       </a>
                     </li>
                     <li
-                      className={`menu-item-has-children  ${
-                        location.pathname === "/about" ? "active" : ""
-                      }`}
+                      className={`menu-item-has-children  ${location.pathname === "/about" ? "active" : ""
+                        }`}
                     >
                       <Link to={"/about"}>
                         <span>About us</span>
                       </Link>
                     </li>
                     <li
-                      className={`menu-item-has-children  ${
-                        location.pathname === "/portfolio-section"
+                      className={`menu-item-has-children  ${location.pathname === "/portfolio-section"
                           ? "active"
                           : ""
-                      }`}
+                        }`}
                     >
                       <Link to={"/portfolio-section"}>
                         <span>Portfolio</span>
                       </Link>
                     </li>
                     <li
-                      className={`menu-item-has-children  ${
-                        location.pathname === "/appDevelopment" ? "active" : ""
-                      } ${
-                        location.pathname === "/software-development"
+                      className={`menu-item-has-children  ${location.pathname === "/appDevelopment" ? "active" : ""
+                        } ${location.pathname === "/software-development"
                           ? "active"
                           : ""
-                      } ${
-                        location.pathname === "/webDevelopment" ? "active" : ""
-                      } ${
-                        location.pathname === "/digital-marketing"
+                        } ${location.pathname === "/webDevelopment" ? "active" : ""
+                        } ${location.pathname === "/graphic-desig"
                           ? "active"
                           : ""
-                      } ${
-                        location.pathname === "/erp-development" ? "active" : ""
-                      }`}
+                        } ${location.pathname === "/erp-development" ? "active" : ""
+                        }`}
                     >
                       <a href="#services">
                         <span>Services</span>
                       </a>
                       <ul className="submenu">
                         <li
-                          className={`menu-item-has-children  ${
-                            location.pathname === "/appDevelopment"
+                          className={`menu-item-has-children  ${location.pathname === "/appDevelopment"
                               ? "active"
                               : ""
-                          }`}
+                            }`}
                         >
                           <Link to={"/appDevelopment"}>
                             <span>Mobile App Development</span>
                           </Link>
                         </li>
                         <li
-                          className={`menu-item-has-children  ${
-                            location.pathname === "/software-development"
+                          className={`menu-item-has-children  ${location.pathname === "/software-development"
                               ? "active"
                               : ""
-                          }`}
+                            }`}
                         >
                           {" "}
                           <Link to={"/software-development"}>
@@ -190,34 +183,31 @@ export default function Navbar(props) {
                           </Link>{" "}
                         </li>
                         <li
-                          className={`menu-item-has-children  ${
-                            location.pathname === "/digital-marketing"
+                          className={`menu-item-has-children  ${location.pathname === "//graphic-desig"
                               ? "active"
                               : ""
-                          }`}
+                            }`}
                         >
-                          <Link to={"/digital-marketing"}>
-                            <span>Digital Marketing</span>
+                          <Link to={"//graphic-desig"}>
+                            <span>Graphic Design</span>
                           </Link>{" "}
                         </li>
 
                         <li
-                          className={`menu-item-has-children  ${
-                            location.pathname === "/erp-developement"
+                          className={`menu-item-has-children  ${location.pathname === "/erp-developement"
                               ? "active"
                               : ""
-                          }`}
+                            }`}
                         >
                           <Link to={"/erp-developement"}>
                             <span>Erp Development</span>
                           </Link>{" "}
                         </li>
                         <li
-                          className={`menu-item-has-children  ${
-                            location.pathname === "/webDevelopment"
+                          className={`menu-item-has-children  ${location.pathname === "/webDevelopment"
                               ? "active"
                               : ""
-                          }`}
+                            }`}
                         >
                           {" "}
                           <Link to={"/webDevelopment"}>
@@ -228,9 +218,8 @@ export default function Navbar(props) {
                       </ul>
                     </li>
                     <li
-                      className={`menu-item-has-children  ${
-                        location.pathname === "/careers" ? "active" : ""
-                      }`}
+                      className={`menu-item-has-children  ${location.pathname === "/careers" ? "active" : ""
+                        }`}
                     >
                       <Link to={"/careers"}>
                         <span>Careers</span>
@@ -238,9 +227,8 @@ export default function Navbar(props) {
                     </li>
 
                     <li
-                      className={`menu-item-has-children  ${
-                        location.pathname === "/contact" ? "active" : ""
-                      }`}
+                      className={`menu-item-has-children  ${location.pathname === "/contact" ? "active" : ""
+                        }`}
                     >
                       <Link to={"/contact"}>
                         <span>Contact</span>
@@ -299,8 +287,8 @@ export default function Navbar(props) {
                                 </NavLink>{" "}
                               </li> */}
                               <li>
-                                <Link to={"/digital-marketing"}>
-                                  <span>Digital Marketing</span>
+                                <Link to={"/graphic-desig"}>
+                                  <span>Graphic Design</span>
                                 </Link>{" "}
                               </li>
                               <li>
@@ -333,7 +321,7 @@ export default function Navbar(props) {
 
               <div className="xb-header__right ul_li">
                 <div className="d-none d-lg-block">
-                  <a
+                  {/* <a
                     className="xb-header-bar offcanvas-sidebar-btn ml-30"
                     onClick={() => setShowSide(!showSide)} // side view btn;
                   >
@@ -343,10 +331,22 @@ export default function Navbar(props) {
                       <span />
                       <span />
                     </div>
-                  </a>
+                  </a> */}
+
+                  <div
+                    className="xb-header-bar offcanvas-sidebar-btn ml-30"
+                    onClick={() => setShowSide(!showSide)} // side view btn;
+                  >
+                    <div className="xb-header-bar__icon">
+                      <span />
+                      <span />
+                      <span />
+                      <span />
+                    </div>
+                  </div>
                 </div>
                 <div className="header-bar d-lg-none">
-                  <a
+                  {/* <a
                     className="xb-header-bar xb-nav-mobile ml-30"
                     onClick={() => setShowMobile(!showMobile)} // mobile view btn;
                   >
@@ -356,7 +356,19 @@ export default function Navbar(props) {
                       <span />
                       <span />
                     </div>
-                  </a>
+                  </a> */}
+
+<div
+                    className="xb-header-bar xb-nav-mobile ml-30"
+                    onClick={() => setShowMobile(!showMobile)} // mobile view btn;
+                  >
+                    <div className="xb-header-bar__icon">
+                      <span />
+                      <span />
+                      <span />
+                      <span />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

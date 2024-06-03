@@ -1,5 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import './App.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -24,6 +25,11 @@ import About from "./Pages/About";
 import AppDevelopment from "./Pages/Developments/AppDevelopment";
 import WebDevelopment from "./Pages/Developments/WebDevelopment";
 import Footer from "./Componets/Footer/Footer";
+import Business from "./Componets/What_Business/Business";
+import Service from "./Componets/Services/Service";
+import Possibility from "./Componets/Positbilities/Possibility";
+import GraphicDesign from "./Pages/GraphicDesign/GraphicDesign";
+import Blog from "./Componets/Blog/Blog";
 
 function App() {
   const [scroll, setIsScrolled] = useState(false);
@@ -68,7 +74,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/appDevelopment" element={<AppDevelopment />} />
           <Route path="/webDevelopment" element={<WebDevelopment />} />
-          <Route path="/digital-marketing" element={<DigitalMarketing />} />
+          {/* <Route path="/digital-marketing" element={<DigitalMarketing />} /> */}
+          <Route path="/graphic-design" element={<GraphicDesign />} />
           <Route path="/erp-developement" element={<ErpDevelopment />} />
           <Route path="/software-development" element={<Softdevelopment />} />
           <Route path="/contact" element={<Contact />} />
@@ -100,8 +107,7 @@ const Home = () => {
           <img
             src="img/logo/Dhanwis Logo-01.png"
             alt="Team Logo"
-            width="400"
-            height="auto"
+            className='splash-screen'
             data-aos="zoom-out-down"
             data-aos-duration="1000"
           />
@@ -110,9 +116,13 @@ const Home = () => {
         <>
           {" "}
           <Banner />
-          <Fields />
-          <Services />
           <Client />
+          <Fields />
+          <Business />
+          {/* <Services /> */}
+          <Service />
+          {/* <Blog /> */}
+          <Possibility />
         </>
       )}
     </div>

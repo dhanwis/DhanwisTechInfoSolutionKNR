@@ -5,6 +5,10 @@
   }
 }
 
+.logoImg{
+  width: 111px;
+}
+
 .nav-link:hover {
   color: rgb(0, 255, 42);
 }

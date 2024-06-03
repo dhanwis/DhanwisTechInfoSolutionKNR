@@ -40,7 +40,7 @@ export default function Fields() {
                 </div>
             </div>
 
-            <div className={`p-4 cmpad`}>
+            {/* <div className={`p-4 cmpad`}>
                 <div className="row">
                     <div className={`col-lg-6`}>
                         <h2 className="mainhead">
@@ -118,11 +118,7 @@ export default function Fields() {
                     </div>
 
                 </div>
-
-
-
-
-            </div>
+            </div> */}
         </div>
     )
 }
