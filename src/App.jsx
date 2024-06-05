@@ -1,6 +1,5 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import './App.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -29,7 +28,6 @@ import Business from "./Componets/What_Business/Business";
 import Service from "./Componets/Services/Service";
 import Possibility from "./Componets/Positbilities/Possibility";
 import GraphicDesign from "./Pages/GraphicDesign/GraphicDesign";
-import Blog from "./Componets/Blog/Blog";
 
 function App() {
   const [scroll, setIsScrolled] = useState(false);
@@ -107,7 +105,8 @@ const Home = () => {
           <img
             src="img/logo/Dhanwis Logo-01.png"
             alt="Team Logo"
-            className='splash-screen'
+            width={400}
+            height='auto'
             data-aos="zoom-out-down"
             data-aos-duration="1000"
           />
